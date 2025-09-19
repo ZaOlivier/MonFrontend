@@ -6,7 +6,7 @@ export default function Home() {
    <Image src="/favicon.ico" alt="carre" 
    width={50} height={50}
    />
-   on reommence encoe
+   on reommence encoe here
    
    </>
   );
