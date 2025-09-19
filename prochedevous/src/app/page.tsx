@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
    <>
-   <Image src="@/app/favicon.ico" alt="carre" 
-   width={10} height={10}
+   <Image src="/favicon.ico" alt="carre" 
+   width={50} height={50}
    />
    on reommence encoe
    
