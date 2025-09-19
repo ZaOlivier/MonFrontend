@@ -15,7 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ProcheDeVous",
   description: "Site loacl: site e-commerce de vente de produit, electronique, cosmetic, avec une livraison et un sevice client performant",
+  
 };
+
+<link rel="canonical" href="https://prochedevous.ci" />
+
 
 
 export default function RootLayout({
