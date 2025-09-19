@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run obfuscate",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "obfuscate": "javascript-obfuscator .next/static/chunks --output .next/static/chunks --config obfuscator-config.json",
-    "build:secure": "npm run build && npm run obfuscate"
+    "build:secure": "npm run build"
 
   },
   "dependencies": {
