@@ -7,10 +7,10 @@ export interface Produit {
 }
 
 export interface User {
-    nom: String,
-    numero: String,
-    email: String,
-    motDePass: String,
+    nom: string,
+    numero: string,
+    email: string,
+    motDePass: string,
     
 }
 
