@@ -7,7 +7,6 @@ const userShema= new mongoose.Schema({
     numero: String,
     email: String,
     motDePass: String,
-    ville:String,
 
 });
 
