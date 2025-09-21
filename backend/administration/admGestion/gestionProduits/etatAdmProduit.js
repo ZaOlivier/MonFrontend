@@ -16,7 +16,7 @@ router.get('/affiche-client-produit', async(req, res)=>{
         const admproduit= await AdmProduit.find();
         res.send(admproduit)
     }catch(err){
-        res.send(Error)
+        res.status(404).send('desole')
     }
 })
 // pour ajouter

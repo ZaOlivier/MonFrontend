@@ -50,7 +50,7 @@ app.use('/cd', CdDesUtilis)
 app.use('/administration', Admclient)
 // 2- adm:admproduit
 app.use('/administration', AdmProduit)
-app.use('/donneProd', AdmProduit)
+app.use('/produit', AdmProduit)
 // 
 app.use('/Administration', CdDesUtilis)
 
