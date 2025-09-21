@@ -1,4 +1,4 @@
-import { CadreArticle } from "@/types/types"
+// import { CadreArticle } from "@/types/types"
 
 export const CadreProduit=()=>{
     return(
