@@ -1,5 +1,5 @@
 import axios from "axios"
-import { CadreProduit } from "./cardProduit";
+// import { CadreProduit } from "./cardProduit";
 import { Produit } from "@/types/types";
 import Image from "next/image";
 

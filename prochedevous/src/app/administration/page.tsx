@@ -1,10 +1,10 @@
 // import AdmVoirUser from "@/components/dashbord/dashbord"
 
-const administration =()=>{
+const Administration =()=>{
     return(
         // <AdmVoirUser/>
         <>d</>
     )
 }
 
-export default administration;
+export default Administration;
