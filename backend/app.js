@@ -24,7 +24,6 @@ const CdDesUtilis=require("./utilisateur/actionUtilis/route/commande/commandeRou
 
 // 
 app.use(cors());
-
 // pour la connexion de mam db mongo
 // pour cacher mon uri (mes identifaint de connexion de ma db)
 dotenv.config();
