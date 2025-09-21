@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://prochedevous.vercel.app
+
+# Sitemaps
+Sitemap: https://prochedevous.vercel.app/sitemap.xml

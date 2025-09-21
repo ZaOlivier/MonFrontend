@@ -13,7 +13,7 @@ export const Prod=async()=>{
     
     return(
         <>
-        {produit.map((Article:Produit, inxdex:string|any)=>(
+        {produit.map((Article:Produit, inxdex:string)=>(
             // <CadreProduit key={Article.id}
             
             // />
