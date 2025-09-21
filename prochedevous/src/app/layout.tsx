@@ -70,28 +70,28 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <meta name="next-size-adjust" content=""/>
-        <title>ProcheDeVous | Votre boutique en ligne de confiance</title>
+        <title>OLIVI | Acheter en toute securite avec nous</title>
         <meta name="description" content="Achetez en toute sécurité des produits électroniques, cosmétiques et plus encore. Livraison rapide partout en Côte d&#x27;Ivoire."/>
-        <meta name="keywords" content="e-commerce,boutique en ligne,produits,électronique,cosmétiques,ProcheDeVous,achat en ligne,livraison rapide"/>
+        <meta name="keywords" content="e-commerce,boutique en ligne,produits,électronique,cosmétiques,olivi,achat en ligne,livraison rapide"/>
         <meta name="robots" content="index, follow"/>
         <meta property="og:title" content="ProcheDeVous"/>
-        <meta property="og:description" content="Découvrez les meilleurs produits en ligne avec ProcheDeVous."/>
-        <meta property="og:url" content="https://prochedevous.ci"/>
-        <meta property="og:site_name" content="ProcheDeVous"/>
+        <meta property="og:description" content="Découvrez les meilleurs produits en ligne avec olivi."/>
+        <meta property="og:url" content="https://olivi.ci"/>
+        <meta property="og:site_name" content="OLIVI"/>
         <meta property="og:locale" content="fr_FR"/>
-        <meta property="og:image" content="https://prochedevous.vercel.app/og-image.jpg"/>
+        <meta property="og:image" content="https://olivi.vercel.app/og-image.jpg"/>
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="630"/>
-        <meta property="og:image:alt" content="Image de ProcheDeVous"/>
+        <meta property="og:image:alt" content="Image de OLIVI"/>
         <meta property="og:type" content="website"/>
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title" content="ProcheDeVous"/>
+        <meta name="twitter:title" content="OLIVI"/>
         <meta name="twitter:description" content="Achetez en toute confiance en ligne."/>
-        <meta name="twitter:image" content="https://prochedevous.vercel.app/og-image.jpg"/>
+        <meta name="twitter:image" content="https://olivi.vercel.app/og-image.jpg"/>
         </head>
       <body>
         <Navigation/>
-        <main>{children}</main>
+        <main className="">{children}</main>
       </body>
       
     </html>

@@ -17,10 +17,15 @@ export const Prod=async()=>{
             // <CadreProduit key={Article.id}
             
             // />
-            <div key={inxdex}>
-                <Image src ={Article.image} alt="Sac à dos pour homme chez Foluo"/>
-                <p>{Article.nom} </p>
+            <section key={inxdex}>
+            <div className="block ">
+                <div className="bg-gray-600">
+                    <Image src ={Article.image} alt="Sac à dos pour homme chez Foluo"/>
+                    <p>{Article.nom} </p>
+                    <p>{Article.prix} </p>
+                </div>
             </div>
+            </section>
                 
         ))}
         </>

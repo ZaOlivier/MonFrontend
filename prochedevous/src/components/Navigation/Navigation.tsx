@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-// import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import { BarreDeRecherche } from "./formulaire";
 
 
 export const Navigation=()=>{
     return(
     
-          <header>
+          <header className="fixed">
             <section>
               <div 
-              className=" border-4 border-green-600  bg-white w-auto h-22
+              className=" border-4 border-green-600  bg-white w-80 h-22
                 sm:flex sm:w-auto
                 md:w-auto md:border-blue-600 md:border-2">
                 <div className="flex">
@@ -21,12 +21,12 @@ export const Navigation=()=>{
                   />
                   </Link>
                 </div>
-                <div className="">
-                    <Link href="/commande">
-                      vue
-                    </Link>
+                <div className="pl-40">
+                    {/* <Link href="/commande">
+                      
+                    </Link> */}
                     <Link href="/panier">
-                      panier
+                      <ShoppingCart/>
                     </Link>
                   </div>
                 </div>
