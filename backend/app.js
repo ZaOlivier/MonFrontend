@@ -1,10 +1,8 @@
 // pour cacher mon uri (mes identifaint de connexion de ma db)
-require('dotenv').config();
 // on importe mongoose pour pouvoir se connecter et interragie avec mongo altas
-const mongoose = require('mongoose');
-const port=process.env.PORT;
+
 // pour cacher mon uri (mes identifaint de connexion de ma db)
-const uri = process.env.MONGO_URI;
+
 // pour eviter les histoire de cors
 const cors = require('cors');
 // le module express
@@ -23,16 +21,9 @@ const CdDesUtilis=require("./utilisateur/actionUtilis/route/commande/commandeRou
 
 
 // 
-app.use(cors());
-// pour la connexion de mam db mongo
-// pour cacher mon uri (mes identifaint de connexion de ma db)
-mongoose.connect(process.env.MONGO_URI)
-// mongoose.connect("mongodb+srv://zaouliolivier01:MjOLyIm2tsziRPov1@clusterO.wosgqqy.mongodb.net/commerce?retryWrites=true&w=majority")
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
-.then(() => console.log('Connecté à MongoDB Atlas'))
-.catch(err => console.error('Erreur de connexion à MongoDB Atlas :', err));
+
+app.use(cors({ origin: "https://olivi.vercel.app" }));
+
 
 
 

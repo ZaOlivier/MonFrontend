@@ -8,7 +8,7 @@ export const Prod=async()=>{
     
     try{
         const res=await
-        axios.get("http://localhost:5000/produit/affiche-client-produit")
+        axios.get("https://olivi.onrender.com/produit/affiche-client-produit")
         const produit= res.data;
     
     return(
