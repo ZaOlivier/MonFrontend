@@ -11,7 +11,7 @@ router.get('/admproduit', async(req, res)=>{
         res.send(Error)
     }
 })
-router.get('/affiche-client-produit', async(req, res)=>{
+router.get('/article', async(req, res)=>{
     try{
         const admproduit= await AdmProduit.find();
         res.send(admproduit)

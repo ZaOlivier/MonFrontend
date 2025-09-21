@@ -7,8 +7,8 @@ import Image from "next/image";
 export const Prod=async()=>{
     
     try{
-        const res=await
-        axios.get("https://olivi.onrender.com/produit/affiche-client-produit")
+        const res = await
+        axios.get("https://olivi.onrender.com/produit/article")
         const produit= res.data;
     
     return(
