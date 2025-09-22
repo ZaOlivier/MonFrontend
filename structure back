@@ -1,0 +1,25 @@
+backend/
+├── models/        → Tes schémas Mongoose (MongoDB)
+│   └── Produit.js
+├── routes/        → Tes routes Express (endpoints)
+│   └── produit.routes.js
+├── controllers/   → La logique métier de chaque route (CRUD, etc.)
+│   └── produit.controller.js
+├── services/      → (optionnel) Logique complexe, traitements, appels externes
+│   └── produit.service.js
+├── lib/ ou config/ → Fichiers de config (ex: connexion DB)
+│   └── db.js
+├── app.js         → Création de l’app Express (middlewares, routes, etc.)
+├── serveur.js     → Lancement du serveur, écoute du port
+└── .env           → Variables d’environnement
+
+
+🧠 Explication claire :
+
+- models/ : Définit les modèles MongoDB (ex: Produit, User…)
+- routes/ : Définit les chemins (ex: /produits) → appelle un controller
+- controllers/ : Gère la logique liée aux routes (CRUD, etc.)
+- services/ : (optionnel) Sépare la logique métier complexe (calculs, appels API…)
+- lib/ ou config/ : Connexion MongoDB, configuration initiale
+- app.js : Initialise Express, middleware, CORS, JSON, routes…
+- serveur.js : Démarre le serveur avec app.listen(...)
