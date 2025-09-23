@@ -2,7 +2,6 @@ import axios from "axios"
 // import { CadreProduit } from "./cardProduit";
 import { Produit } from "@/types/types";
 import Link from "next/link";
-import next from "next";
 import Image from "next/image";
 import '../../styles/style.css'
 
@@ -26,7 +25,7 @@ export const Prod=async()=>{
             <div key={inxdex} >
                 <div className="bg-gray-600">
                     <Link href={'/produit'}>
-                    <Image src ={Article.image} alt="Sac à dos pour homme chez Foluo" height={150} width={150} className=""/>
+                    <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={150} width={150}/>
                     <p>{Article.nom } </p>
                     <p>{Article.prix} </p>
                     </Link>

@@ -18,7 +18,7 @@ const Users=require('./controllers/user.controller');
 // const AdmProduit=require("./administration/admGestion/gestionProduits/etatAdmProduit")
 const SacR=require('./controllers/produit.detail.controller')
 // const CdDesUtilis=require("./utilisateur/actionUtilis/route/commande/commandeRoute")
-const Prod=require('./controllers/produit.controller')
+const Produit=require('./controllers/produit.controller')
 
 
 
@@ -35,7 +35,7 @@ app.use(express.json());
 // les route ou encore les API qui vont nous permettre de faire des requetes via frontend
 // 1- utilis:user
 app.use('/Use', Users)
-app.use('/produit', Prod)
+app.use('/produit', Produit)
 // app.use('/ma', SacR)
 // 
 // app.use('/cd', CdDesUtilis)
