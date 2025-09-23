@@ -16,14 +16,14 @@ export const Prod=async()=>{
         axios.get("https://olivi.onrender.com/produit/article")
         const produit= res.data;
         
-        
+    
     return(
         <>
         
 
             <section className="flex overflow-x-auto scrollbar-hidden ">
           {produit.map((Article:Produit, inxdex:string)=>(
-            <div key={inxdex} className="">
+            <div key={inxdex} >
                 <div className="bg-gray-600">
                     <Link href={'/produit'}>
                     <img src ={Article.image} alt="Sac à dos pour homme chez Foluo" height={150} width={150} className=""/>
@@ -35,7 +35,6 @@ export const Prod=async()=>{
             </div>
             ))}
             </section>
-
         
         </>
         
