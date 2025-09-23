@@ -35,7 +35,7 @@ app.use(express.json());
 // les route ou encore les API qui vont nous permettre de faire des requetes via frontend
 // 1- utilis:user
 app.use('/Use', Users)
-app.use('/prod', Prod)
+app.use('/produit', Prod)
 // app.use('/ma', SacR)
 // 
 // app.use('/cd', CdDesUtilis)

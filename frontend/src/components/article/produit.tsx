@@ -26,7 +26,7 @@ export const Prod=async()=>{
             <div key={inxdex} >
                 <div className="bg-gray-600">
                     <Link href={'/produit'}>
-                    <img src ={Article.image} alt="Sac à dos pour homme chez Foluo" height={150} width={150} className=""/>
+                    <Image src ={Article.image} alt="Sac à dos pour homme chez Foluo" height={150} width={150} className=""/>
                     <p>{Article.nom } </p>
                     <p>{Article.prix} </p>
                     </Link>

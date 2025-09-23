@@ -2,7 +2,7 @@ const express=require('express');
 const router= express.Router();
 const produit=require('../models/produit.model');
 
-router.get('/read', async(req, res)=>{
+router.get('/article', async(req, res)=>{
 
     try{
 
