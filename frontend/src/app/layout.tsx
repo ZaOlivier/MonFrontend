@@ -93,11 +93,11 @@ export default function RootLayout({
         <meta name="twitter:description" content="Achetez en toute confiance en ligne."/>
         <meta name="twitter:image" content="https://olivi.vercel.app/og-image.jpg"/>
         </head>
-      <body className="border-2 border-black">
-        <div>
-          <Image src="/es.gif"  alt="ff" width={10000} height={0} className=""/>
+      <body className="border-2">
+        <div className="w-full h-[6vh] ">
+          <Image src="/es.gif"  alt="ff" width={100} height={0} className="w-full h-full"/>
         </div>
-        <div>Lorem ipsum dolor sit amet consectetur.</div>
+        <div><h5 className="bg-gray-400 text-white text-center border-2 w-full">Expose tes gammes de produit sur IDDA</h5></div>
         <Navigation/>
         <main className="border-green-600 ">{children}</main>
       </body>

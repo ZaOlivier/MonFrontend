@@ -1,16 +1,15 @@
 "use client"
+import { Search } from 'lucide-react'
 
 export const BarreDeRecherche=()=>{
     return(
 
-        <form  className="w-100 pl-4 pr-5">
+        <form  className="w-full px-2 my-2" >
             <input type="text" name="" id="" placeholder="Rechercher d'autre produit"
-                className="border-2 border-blue-600 w-5O hov-n"
+                className="w-[82vw] h-full border-2 border-gray-600 rounded-6px"
             />
-            <button className="bg-gray-400 border-2 border-red-100 wi-50"
-                >
-                rechercher
-            </button>
+            <button className="w-1/9 sticky right-80 top-77 pl-1"
+            > <Search/> </button>
         </form>
     )
 }
