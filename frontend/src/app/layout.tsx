@@ -93,7 +93,7 @@ export default function RootLayout({
         <meta name="twitter:description" content="Achetez en toute confiance en ligne."/>
         <meta name="twitter:image" content="https://olivi.vercel.app/og-image.jpg"/>
         </head>
-      <body>
+      <body className="border-2 border-black">
         <div>
           <Image src="/es.gif"  alt="ff" width={10000} height={0} className=""/>
         </div>

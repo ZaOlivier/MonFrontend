@@ -7,10 +7,11 @@ import { BarreDeRecherche } from "./formulaire";
 export const Navigation=()=>{
     return(
     
-          <header className="sticky top-0 z-50">
+          <header className="sticky top-0 z-50 ">
             <section>
               <div 
-              className=" border-4 border-green-600  bg-white w-80 h-22
+              // border-green-600
+              className="bg-white w-100% h-20
                 sm:flex sm:w-auto
                 md:w-auto md:border-blue-600 md:border-2">
                 <div className="flex">
