@@ -8,14 +8,14 @@ import { UserRoundPen } from 'lucide-react';
 export const Navigation=()=>{
     return(
     
-          <header className="sticky top-2 z-50 w-full bg-white h-[15vh]">
-            <section className="py-3 my-1">
+          <header className="sticky top-0 z-50 w-full bg-white h-[15vh]">
+            <section className="py-4">
               <div 
               // border-green-600
               className="
                 sm:block sm:w-auto
                 md:w-auto md:border-blue-600 md:border-2">
-                <div className="flex w-full mx-3">
+                <div className="flex w-full">
                 <div className="w-1/1 content-center ml-1" >
                   <Link href="/produit" >
                   <Image src="/next.svg" alt="Olivi" width={100} height={100}

@@ -20,7 +20,7 @@ export const Prod=async()=>{
             <>
         
                 <div >
-                    <div className="py-2">
+                    <div className="py-1">
                     <section >
                         <header className="bg-red-600 h-10">
                             <div className="pl-3">
@@ -72,6 +72,7 @@ export const Produ=async()=>{
             <>
         
                 <div className="">
+                    <div className="pb-1">
                     <section >
                         <header className="bg-red-600 h-10">
                             <div className="pl-3">
@@ -98,6 +99,7 @@ export const Produ=async()=>{
                         
                         </div>
                     </section>
+                    </div>
                 </div>
         
             </>
