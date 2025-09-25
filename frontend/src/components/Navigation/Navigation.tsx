@@ -45,9 +45,10 @@ export const Navigation=()=>{
                 </div>
                   <form  className="mx-1" >
                     <input type="text" name="" id="" placeholder="Rechercher d'autre produit"
-                      className="w-full h-[5vh] text-center border-1 border-gray-800"
+                      className="w-full h-[5vh] text-center border-1 border-gray-800
+                      rounded-2xl "
                     />
-                    <button className="mx-1 absolute right-70 top-13 ">
+                    <button className="mx-1 absolute right-70 top-13">
                       <Search/>
                     </button>
                   </form>
