@@ -4,7 +4,7 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import { Navigation } from "@/components/Navigation/Navigation";
 import "../styles/globals.css";
-import Image from "next/image";
+import { Lumis } from "@/components/h/re";
 // import Head from "next/head";
 
 
@@ -96,34 +96,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://olivi.vercel.app/og-image.jpg"/>
         </head>
       <body >
-         <div style={{ position: "relative", width: "100%", height: "auto", overflow: "hidden"}} className="bg-blue-500">
-        {/* <div
-        style={{
-          // position: "absolute",   
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "white",
-          textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)",
-        }}
-      >
-        <h1 className="">Bienvenue sur notre site</h1>
-      </div> */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        style={{ width: "100%", height: "12vh", objectFit: "cover" }}
-      >
-        <source src="gif.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la lecture des vidéos.
-      </video>
-    </div>
+        <Lumis/>
 {/*         
         <div className="w-full h-[8vh] ">
           <Image src="/es.gif"  alt="ff" width={300} height={300} className="w-full h-full"/>
