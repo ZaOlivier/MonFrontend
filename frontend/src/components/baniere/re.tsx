@@ -1,4 +1,4 @@
-export const Lumis=()=>{
+export const BaniereHeader=()=>{
     return(
            <div style={{ position: "relative", width: "100%", height: "auto", overflow: "hidden"}} className="bg-blue-500">
                 {/* <div
