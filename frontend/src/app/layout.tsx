@@ -100,26 +100,7 @@ export default function RootLayout({
         <div><h5 className="bg-gray-400 text-white text-center border-2 w-full">Expose tes gammes de produit sur IDDA</h5></div>
         <Navigation/>
         <main className="border-green-600 ">{children}</main>
-        <footer className="bg-gray-500">
-          <div>
-            <section className="bg-white text-center">
-              <p>Expose tes produits sur IDDA et profite d'une vue et vente incroyable</p>
-              <span>pour toute collaboration conctater nous au :</span><br />
-              <span><strong><a href="Tel: 07 15 92 65 91"></a></strong> </span><br />
-              <span><strong><a href="Tel: 07 15 92 65 91"></a></strong> </span>
-              <span><strong>Ouvert 7jr/7 - 24h/24 (pour tout achat)</strong></span><br />
-              <span>livraison partout en cote d'ivoire de<br /><strong>7jr/7  de 8h-20h</strong></span>
-            </section>
-          </div>
-          <div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
-            elit. Inventore, veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Quibusdam, eius aliquid dolorem id iusto laborum ipsum commodi fugiat eveniet ducimus.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Quibusdam, eius aliquid dolorem id iusto laborum ipsum commodi fugiat eveniet ducimus.</p>
-          </div>
-        </footer>
+        
       </body>
       
     </html>
