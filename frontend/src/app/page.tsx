@@ -14,6 +14,9 @@ export default function Home () {
       <Prod/>
       <Prod/>
       <Prod/>
+      <Prod/>
+      <Prod/>
+      <Prod/>
     </div>
     
    </>

@@ -32,7 +32,7 @@ export default async function Prod(){
                         
                         
                         {produit.map((Article:Produit, inxdex:string)=>(
-                            <div key={inxdex} className="h-1OO bg-white pl-2 border-1 " >
+                            <div key={inxdex} className="h-1OO bg-white pl-2" >
                                  <article className="flex w-40 " >
                                 <Link href={'/detail'}>
                                     <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
