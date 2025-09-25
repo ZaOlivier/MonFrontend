@@ -1,0 +1,26 @@
+Oui, tu peux afficher plusieurs headers en fonction des breakpoints (mobile, tablette, desktop) avec Tailwind CSS dans Next.js.
+
+---
+
+✅ Exemple :
+
+jsx
+{/* Header Mobile */}
+<!-- <div className="block md:hidden">
+  <MobileHeader />
+</div> -->
+
+<!-- {/* Header Desktop */} -->
+<!-- <div className="hidden md:block">
+  <DesktopHeader />
+</div> -->
+
+
+---
+
+🧠 Explication rapide :
+
+- block md:hidden → visible uniquement sur mobile
+- hidden md:block → visible à partir de md (≥768px)
+
+Tu peux aussi faire ça avec lg, xl etc. selon le besoin.

@@ -1,10 +1,12 @@
+import axios from "axios"
+// import { CadreProduit } from "./cardProduit";
 import { Produit } from "@/types/types";
-import axios from "axios";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import '../../styles/style.css'
 
-            
-export const ProdB=async()=>{
+
+export default async function Prod(){
     
    
 
@@ -16,8 +18,7 @@ export const ProdB=async()=>{
     
         return(
             <>
-        
-                <div className="">
+                <div >
                     <div className="py-2">
                     <section className="bg-white">
                         <header className="bg-red-600 h-10">
@@ -26,20 +27,20 @@ export const ProdB=async()=>{
                             </div>
                             
                         </header>
-                        <div className=" flex overflow-x-auto scrollbar-hidden">
+                        <div className="flex overflow-x-auto scrollbar-hidden w-100%">
                        
                         
                         
-                        {produit.slice(2, 6).map((Article:Produit, inxdex:string)=>(
-                            <div key={inxdex} className="h-1OO bg-white pl-2" >
-                                 <article className="flex w-40" >
-                                <Link href={'/produit'} className="">
-                                    <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={150} width={150}/>
+                        {produit.map((Article:Produit, inxdex:string)=>(
+                            <div key={inxdex} className="h-1OO bg-white pl-2 border-1 " >
+                                 <article className="flex w-40 " >
+                                <Link href={'/detail'}>
+                                    <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
                                     <p>{Article.nom } </p>
                                     <p>{Article.prix} </p>
                                 </Link>
                                 </article>
-                                <button>ajouter au panier</button>
+                                <button className="text-center">ajouter au panier</button>
                             </div>
                         ))}
                         
@@ -53,5 +54,5 @@ export const ProdB=async()=>{
         )}catch(err){
         console.error((err))
     }
-    
+
 }

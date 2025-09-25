@@ -2,9 +2,8 @@
 
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-import { Navigation } from "@/components/Navigation/Navigation";
+import HeaderGene from "@/components/barreNavi/headerGene";
 import "../styles/globals.css";
-import { BaniereHeader} from "@/components/baniere/re";
 // import Head from "next/head";
 
 
@@ -96,11 +95,8 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://olivi.vercel.app/og-image.jpg"/>
         </head>
       <body >
-        <BaniereHeader />
-        <div><h5 className="bg-gray-400 text-white text-center border-2 w-full">Expose tes gammes de produit sur IDDA</h5></div>
-        <Navigation/>
+        <HeaderGene/>
         <main className="border-green-600 ">{children}</main>
-        
       </body>
       
     </html>
