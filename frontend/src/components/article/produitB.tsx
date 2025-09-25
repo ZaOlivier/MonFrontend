@@ -18,8 +18,8 @@ export const ProdB=async()=>{
             <>
         
                 <div className="">
-                    <div className="pb-1">
-                    <section >
+                    <div className="py-2">
+                    <section className="bg-white">
                         <header className="bg-red-600 h-10">
                             <div className="pl-3">
                                 <p >Notre nouvelle gamme</p>

@@ -8,8 +8,8 @@ import { UserRoundPen } from 'lucide-react';
 export const Navigation=()=>{
     return(
     
-          <header className="sticky top-0 z-50 w-full bg-white h-[15vh]">
-            <section className="py-4">
+          <header className="sticky top-0 z-50 w-full bg-white h-[16vh] border-2 border-white">
+            <section className="py-3">
               <div 
               // border-green-600
               className="

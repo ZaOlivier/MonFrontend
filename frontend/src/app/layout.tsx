@@ -1,3 +1,5 @@
+
+
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import { Navigation } from "@/components/Navigation/Navigation";
@@ -93,13 +95,62 @@ export default function RootLayout({
         <meta name="twitter:description" content="Achetez en toute confiance en ligne."/>
         <meta name="twitter:image" content="https://olivi.vercel.app/og-image.jpg"/>
         </head>
-      <body className="border-2">
+      <body >
+         <div style={{ position: "relative", width: "100%", height: "auto", overflow: "hidden"}} className="bg-blue-500">
+        {/* <div
+        style={{
+          // position: "absolute",   
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "white",
+          textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)",
+        }}
+      >
+        <h1 className="">Bienvenue sur notre site</h1>
+      </div> */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{ width: "100%", height: "12vh", objectFit: "cover" }}
+      >
+        <source src="gif.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture des vidéos.
+      </video>
+    </div>
+{/*         
         <div className="w-full h-[8vh] ">
           <Image src="/es.gif"  alt="ff" width={300} height={300} className="w-full h-full"/>
-        </div>
+        </div> */}
         <div><h5 className="bg-gray-400 text-white text-center border-2 w-full">Expose tes gammes de produit sur IDDA</h5></div>
         <Navigation/>
         <main className="border-green-600 ">{children}</main>
+        <footer className="bg-gray-500">
+          <div>
+            <section className="bg-white text-center">
+              <p>Expose tes produits sur IDDA et profite d'une vue et vente incroyable</p>
+              <span>pour toute collaboration conctater nous au :</span><br />
+              <span><strong>Tel: </strong> 07-15-92-65-91</span><br />
+              <span><strong>whatsapp: </strong> 07-15-92-65-91</span><br />
+              <span><strong>Ouvert 7jr/7 - 24h/24 (pour tout achat)</strong></span><br />
+              <span>livraison partout en cote d'ivoire de<br /><strong>7jr/7 - de 8h-20h</strong></span>
+            </section>
+          </div>
+          <div className="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+            elit. Inventore, veritatis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Quibusdam, eius aliquid dolorem id iusto laborum ipsum commodi fugiat eveniet ducimus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Quibusdam, eius aliquid dolorem id iusto laborum ipsum commodi fugiat eveniet ducimus.</p>
+          </div>
+        </footer>
       </body>
       
     </html>

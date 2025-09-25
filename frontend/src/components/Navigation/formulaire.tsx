@@ -4,12 +4,12 @@ import { Search } from 'lucide-react'
 export const BarreDeRecherche=()=>{
     return(
 
-        <form  className="w-full px-2  border-2" >
+        <form  className="p-1" >
             <input type="text" name="" id="" placeholder="Rechercher d'autre produit"
-                className="w-[90vw] text-center h-full border-2 border-gray-600 rounded-6px"
+                className="w-[81vw] text-center border-1 border-gray-800"
             />
-            <button className="w-[10vw] sticky right-80 top-77 pl-1"
-            > <Search/> </button>
+            <button className="mx-1 "
+            ><Search/></button>
         </form>
     )
 }

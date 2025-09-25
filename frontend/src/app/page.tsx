@@ -9,12 +9,16 @@ export default function Home () {
   
   return (
    <>
+     
+  
+
+    <div>
     <Prod/>
     <Produ/>
     <ProdB/>
-    <ProdB/>
+    <Produ/>
     <Prod/>
-    
+    </div>
     
    </>
   );

@@ -18,10 +18,9 @@ export const Prod=async()=>{
     
         return(
             <>
-        
                 <div >
-                    <div className="py-1">
-                    <section >
+                    <div className="py-2">
+                    <section className="bg-white">
                         <header className="bg-red-600 h-10">
                             <div className="pl-3">
                                 <p >Notre nouvelle gamme</p>
@@ -72,20 +71,20 @@ export const Produ=async()=>{
             <>
         
                 <div className="">
-                    <div className="pb-1">
-                    <section >
+                    <div className="">
+                    <section className="bg-white">
                         <header className="bg-red-600 h-10">
                             <div className="pl-3">
                                 <p >Notre nouvelle gamme</p>
                             </div>
-                            
+        
                         </header>
                         <div className=" flex overflow-x-auto scrollbar-hidden">
                        
                         
                         
                         {produit.slice(2, 6).map((Article:Produit, inxdex:string)=>(
-                            <div key={inxdex} className="h-1OO bg-white pl-2" >
+                            <div key={inxdex} className="h-1OO pl-2" >
                                  <article className="flex w-40" >
                                 <Link href={'/produit'} className="">
                                     <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={150} width={150}/>
