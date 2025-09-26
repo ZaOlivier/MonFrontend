@@ -1,3 +1,5 @@
+"use client"
+
 import Prod from "@/components/article/cardAcceuil";
 
 export default async function Presentation(){
