@@ -1,12 +1,12 @@
 const express=require('express');
 const router= express.Router();
-const SacDos=require('../models/produit.detail.model');
+const DetailP=require('../models/produit.detail.model');
 
 router.get('/read', async(req, res)=>{
 
     try{
 
-        const Sac= await SacDos.find();
+        const Sac= await DetailP.find();
         res.json(Sac)
 
     }catch(err){

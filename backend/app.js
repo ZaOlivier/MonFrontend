@@ -19,6 +19,7 @@ const Users=require('./controllers/user.controller');
 const SacR=require('./controllers/produit.detail.controller')
 // const CdDesUtilis=require("./utilisateur/actionUtilis/route/commande/commandeRoute")
 const Produit=require('./controllers/produit.controller')
+const Search=require('./controllers/search.produit.controller')
 
 
 
@@ -39,6 +40,7 @@ app.use(express.json());
 // 1- utilis:user
 app.use('/Use', Users)
 app.use('/produit', Produit)
+app.use('/produit', Search)
 // app.use('/ma', SacR)
 // 
 // app.use('/cd', CdDesUtilis)
