@@ -4,6 +4,7 @@ export interface Produit {
     prix:number,
     image:string,
     description?:string
+    
 }
 
 export interface User {

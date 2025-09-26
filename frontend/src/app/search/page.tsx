@@ -15,7 +15,7 @@ export default  function PageDeRecherche(){
     
    useEffect(() => {
     if (query) {
-      axios.get(`https://olivi.onrender.com/produit/article?q=${query}`)
+      axios.get(`https://olivi.onrender.com/produit/search?q=${query}`)
         .then(res => setProduit(res.data))
         .catch(err => console.log(err))
     }
