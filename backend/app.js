@@ -24,7 +24,10 @@ const Produit=require('./controllers/produit.controller')
 
 // 
 
-app.use(cors({ origin: "https://olivi.vercel.app" }));
+app.use(cors({ origin: ["https://olivi.vercel.app", "http://localhost:3000"],
+    credentials: true
+
+}));
 
 
 
