@@ -1,34 +1,29 @@
 "use client"
 
+import {Produit } from "@/types/types";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 
-
-export default function PageDeRecherche(){
+export default  function PageDeRecherche(){
     const recherche= useSearchParams()
     const query=recherche.get('q')
-    const[produit, setProduit]=useState<any>([])
+    const[produit, setProduit]=useState<Produit[]>([])
+    // const[message, setMessage]=useState<string>("")
 
-    useEffect(()=>{
-          axios.get(`https://olivi.onrender.com/produit/search?q=${query}`)
-            .then(res=>{
-            
-        if (res.data.lenght===0) {
-            setProduit("aucun produit");
-             
-        }else{
-            setProduit(res.data)
-        }
     
-        })
+   useEffect(() => {
+    if (query) {
+      axios.get(`https://olivi.onrender.com/produit/article?q=${query}`)
+        .then(res => setProduit(res.data))
+        .catch(err => console.log(err))
+    }
+  }, [query])
 
-    },[query])
-
-    return(
-         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-      {produit.map((p:any) => (
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {produit.map((p) => (
         <div key={p._id} className="border p-2 rounded">
           <img src={p.image} alt={p.nom} className="w-full h-48 object-cover" />
           <h2 className="text-lg font-semibold">{p.nom}</h2>
@@ -37,8 +32,8 @@ export default function PageDeRecherche(){
         </div>
       ))}
     </div>
-
-
-
     )
 }
+
+                 
+    
