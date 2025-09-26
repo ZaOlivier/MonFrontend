@@ -1,24 +1,14 @@
+import Prod from "@/components/article/cardAcceuil";
+import Presentation from "./detail/page";
 
 
-// import Image from "next/image";
-// import Link from "next/link";
-
-import Prod from "./detail/page";
 
 export default function Home () {
 
   
   return (
    <>
-    <div className="">
-      <Prod/>
-      <Prod/>
-      <Prod/>
-      <Prod/>
-      <Prod/>
-      <Prod/>
-    </div>
-    
+    <Prod/>
    </>
-  );
+  )
 }

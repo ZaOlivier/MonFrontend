@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ShoppingCart } from 'lucide-react';
-import { Search } from 'lucide-react'
 import { UserRoundPen } from 'lucide-react';
 import { Menu } from 'lucide-react';
 import Image from "next/image";
+import RechercheDeProduit from "./barreDeReche";
 
 
 export const Navigation=()=>{
@@ -43,20 +43,9 @@ export const Navigation=()=>{
                   </div>
                   </section>
                 </div>
-                  <form  className="mx-1" >
-                    <input type="text" name="" id="" placeholder="Rechercher d'autre produit"
-                      className="w-full h-[5vh] text-center border-1 border-gray-800
-                      rounded-2xl "
-                    />
-                    <button className="mx-1 absolute right-70 top-13">
-                      <Search/>
-                    </button>
-                  </form>
+                  <RechercheDeProduit/>
                 </div>
             </section>
-                      <div className="hidden md:block">
-                        <p>mdhjegbcrhjz</p>
-                      </div>
             </header>
         
     )
