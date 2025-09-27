@@ -31,14 +31,14 @@ export default  function PageDeRecherche(){
 
       <div className="h-screen w-full text-center text-sm lg:text-lg text-white">
         <section className="border-2 h-1/2">
-          <p className="text-black m-6">Désolé aucun resultat pour "{query}"</p>
+          <p className="text-black m-6">Désolé aucun resultat pour {query}</p>
           <div className="mb-10">
             <p>-Vérifier si le nom est correcte</p>
             <p>-Ou vérifier votre connexion</p>
 
           </div>
           <div>
-            <Link href={'/'} className="min-w-[40vw]  p-1 border-2 rounded-2xl">Revenier à l'acceuil</Link>
+            <Link href={'/'} className="min-w-[40vw]  p-1 border-2 rounded-2xl">Revenier à l&apos;acceuil</Link>
           </div>
         </section>
           
