@@ -58,7 +58,7 @@ export default  function PageDeRecherche(){
           <p>{p.prix} FCFA</p>
           <p className="text-sm text-gray-600">{p.description}</p>
            <div className="my-2">
-            <AddToCartButton produit={p}/>
+            <AddToCartButton $produit={p}/>
            </div>
         </div>
       ))}

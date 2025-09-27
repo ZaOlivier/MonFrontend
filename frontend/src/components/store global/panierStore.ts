@@ -5,10 +5,10 @@ import {create} from 'zustand';
 export const PanierStore= create((set)=>({
     etatPanier: [],
     AjouterAuPanier:(produit:Produit[])=>
-    set((state:any)=>({etatPanier: [...state.etatPanier, produit],})),
+    set((state:Produit)=>({etatPanier: [...state.etatPanier, produit],})),
 
-    SupprimerDuPanier:(id:Produit)=>
-    set((state:any)=>({etatPanier: state.etatPanier.filter((p:any)=>p.id!==id)})),
+    SupprimerDuPanier:(_id:Produit)=>
+    set((state:Produit)=>({etatPanier: state.etatPanier.filter((p:any)=>p._id!==_id)})),
 
 }));
 

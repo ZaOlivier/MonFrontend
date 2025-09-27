@@ -1,9 +1,10 @@
 
 "use client";
 
+import { Produit } from "@/types/types";
 import { PanierStore } from "../store global/panierStore"; 
 
-const AddToCartButton = ({produit}:any) => {
+const AddToCartButton = (produit:Produit) => {
   const addCart= PanierStore((state:any) => state.addToCart);
 
     
