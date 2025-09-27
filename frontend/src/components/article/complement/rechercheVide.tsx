@@ -8,7 +8,7 @@ import { useState } from "react"
 
   
   
-export const ProduitComplementaire=async()=>{
+export const ProduitComplementaire=()=>{
     const[produit, setProduit]=useState<Produit[]>([])
 
     try{

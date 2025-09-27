@@ -1,13 +1,12 @@
 "use client"
 
-import { ProduitComplementaire } from "@/components/article/complement/rechercheVide";
 import AddToCartButton from "@/components/button/btnAjouterPanier";
 import {Produit } from "@/types/types";
 import axios from "axios";
-import { error } from "console";
+import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 
 
 export default  function PageDeRecherche(){
@@ -44,9 +43,7 @@ export default  function PageDeRecherche(){
         </section>
           
       </div>
-      <Suspense>
-      {/* <ProduitComplementaire/> */}
-      </Suspense>
+     
       </>
     ):(
 
@@ -56,7 +53,7 @@ export default  function PageDeRecherche(){
           <div className="ralive border-r-2 h-1/10 w-1/3 rounded-r-4xl bottom-20 ml-24 bg-amber-300 py-1 px-0.5">
           <p className="text-sm">promo</p>
           </div>
-          <img src={p.image} alt={p.nom} className="w-full h-40 object-cover" />
+          <Image src={p.image} alt={p.nom} width={300} height={300} className="w-full h-40 object-cover" />
           <h2 className="text-lg font-semibold">{p.nom}</h2>
           <p>{p.prix} FCFA</p>
           <p className="text-sm text-gray-600">{p.description}</p>

@@ -5,7 +5,7 @@ import { Produit } from "@/types/types";
 import Link from "next/link";
 import Image from "next/image";
 import '../../styles/style.css'
-import AddToCartButton from "../button/btnAjouterPanier";
+
 
 
 export default async function CardHorizontal6Prod(){

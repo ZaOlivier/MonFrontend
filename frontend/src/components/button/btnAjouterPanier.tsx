@@ -3,16 +3,12 @@
 
 import { PanierStore } from "../store global/panierStore"; 
 
-const AddToCartButton = ({ produit}:any) => {
+const AddToCartButton = ({produit}:any) => {
   const addCart= PanierStore((state:any) => state.addToCart);
-    
-//   const handleClick = () => {
-//     addCart(produit);
-//   };
 
     
   return (
-    <button onClick={()=>AddToCartButton(produit) }
+    <button onClick={()=>addCart(produit) }
         className="border-2 rounded-3xl border-blue-500 h-auto bg-blue-400"
     >
       Ajouter au panier
