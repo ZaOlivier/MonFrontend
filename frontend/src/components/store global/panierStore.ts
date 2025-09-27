@@ -1,5 +1,5 @@
 
-import { PanierState, Produit } from '@/types/types';
+import { PanierState} from '@/types/types';
 import {create} from 'zustand';
 
 export const PanierStore= create<PanierState>((set)=>({
