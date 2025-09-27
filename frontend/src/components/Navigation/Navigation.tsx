@@ -44,7 +44,8 @@ export const Navigation=()=>{
                     <Link href="/panier">
                       <ShoppingCart/>
                       <div className="absolute top-0 right-5 text-cyan-400">
-                        <p>{NombreAuPanier.length} </p>
+                        <span>{NombreAuPanier.reduce((init, nombre)=> init + nombre.quantite, 0)
+                      }</span>
                       </div>
                     </Link>
                   </div>

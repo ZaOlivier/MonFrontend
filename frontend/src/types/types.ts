@@ -4,9 +4,18 @@ export interface Produit {
     prix:number,
     image:string,
     description?:string,
-    quantite: 1
     
 }
+
+// export interface panier {
+//     _id:string,
+//     nom:string,
+//     prix:number,
+//     image:string,
+//     description?:string,
+//     quantite: 1
+    
+// }
 
 export interface User {
     nom: string,
@@ -27,8 +36,13 @@ export type Message={
 }
 
  export interface PanierState {
-  etatPanier: Produit[]
-  AjouterAuPanier: (item: Produit) => void
+  etatPanier: (Produit & { quantite: number })[];
+  AjouterAuPanier: (item: Produit) => void,
   SupprimerDuPanier: (id: string) => void
  
+}
+
+export interface QDeProduit{
+
+   _id:string
 }

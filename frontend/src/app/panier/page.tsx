@@ -1,7 +1,10 @@
 "use client"
 
+import QDeProduitDansLePanier from "@/components/augmenterQProduitPanier/QproduitP";
 import { PanierStore } from "@/components/store global/panierStore";
 import Image from "next/image";
+import Link from "next/link";
+
 
 
 
@@ -31,7 +34,9 @@ const MonPanier=()=>{
                     
                      <p>{produit.nom} </p> 
                      <p>{produit.prix} </p>
+                     <QDeProduitDansLePanier _id={produit._id}/>
                      <button onClick={()=>Supprimer(produit._id)}>supprimer</button>
+                     <Link href={'/commande'}>Commander</Link>
                 </div>
              </div>
         
