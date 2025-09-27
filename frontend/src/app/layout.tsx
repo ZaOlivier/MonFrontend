@@ -96,7 +96,7 @@ export default function RootLayout({
         </head>
       <body >
         <HeaderGene/>
-        <main className="border-green-600 ">{children}</main>
+        <main>{children}</main>
       </body>
       
     </html>

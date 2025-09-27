@@ -48,7 +48,6 @@ export default async function CardHorizontal6Prod(){
                                             </Link>
 
                                         </article>
-                                         <AddToCartButton produit={Article}/>
 
                                     </div>
                                 ))}

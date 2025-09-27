@@ -13,7 +13,7 @@ const AddToCartButton = ({ produit}:any) => {
     
   return (
     <button onClick={()=>AddToCartButton(produit) }
-        className="border-2 rounded-3xl h-auto bg-orange-400"
+        className="border-2 rounded-3xl border-blue-500 h-auto bg-blue-400"
     >
       Ajouter au panier
     </button>
