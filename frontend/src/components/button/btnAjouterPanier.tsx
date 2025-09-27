@@ -4,8 +4,8 @@
 import { Produit } from "@/types/types";
 import { PanierStore } from "../store global/panierStore"; 
 
-const AddToCartButton = (produit:Produit) => {
-  const addCart= PanierStore((state:any) => state.addToCart);
+const AddToCartButton = ({ produit }: { produit: Produit })=> {
+  const addCart= PanierStore((state) => state.AjouterAuPanier);
 
     
   return (

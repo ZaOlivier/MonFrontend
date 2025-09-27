@@ -3,7 +3,7 @@ export interface Produit {
     nom:string,
     prix:number,
     image:string,
-    description?:string
+    description?:string,
     
 }
 
@@ -23,4 +23,10 @@ export interface CadreArticle {
 
 export type Message={
     type:string
+}
+
+ export interface PanierState {
+  etatPanier: Produit[]
+  AjouterAuPanier: (item: Produit) => void
+  SupprimerDuPanier: (id: string) => void
 }
