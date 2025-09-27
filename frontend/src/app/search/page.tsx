@@ -6,7 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import {useEffect, useState } from "react";
+import {Suspense, useEffect, useState } from "react";
 
 
 export default  function PageDeRecherche(){
@@ -14,7 +14,6 @@ export default  function PageDeRecherche(){
     const query=recherche.get('q')
     const[produit, setProduit]=useState<Produit[]>([])
     // const[message, setMessage]=useState<string>("")
-  
     
    useEffect(() => {
     if (query) {
@@ -30,7 +29,7 @@ export default  function PageDeRecherche(){
       <>
 
       <div className="h-screen w-full text-center text-sm lg:text-lg text-white">
-        <section className="border-2 h-1/2">
+        <section>
           <p className="text-black m-6">Désolé aucun resultat pour {query}</p>
           <div className="mb-10">
             <p>-Vérifier si le nom est correcte</p>
@@ -44,9 +43,10 @@ export default  function PageDeRecherche(){
           
       </div>
      
-      </>
+      </> 
     ):(
 
+        <Suspense>
     <div className="grid grid-cols-2  md:grid-cols-3 gap-1">
       {produit.map((p) => (
         <div key={p._id} className=" border p-2 m-1 rounded bg-white">
@@ -63,6 +63,7 @@ export default  function PageDeRecherche(){
         </div>
       ))}
     </div>
+    </Suspense>
     )}
     
     </>

@@ -4,6 +4,7 @@ export interface Produit {
     prix:number,
     image:string,
     description?:string,
+    quantite: 1
     
 }
 
@@ -29,4 +30,5 @@ export type Message={
   etatPanier: Produit[]
   AjouterAuPanier: (item: Produit) => void
   SupprimerDuPanier: (id: string) => void
+ 
 }

@@ -1,12 +1,16 @@
+"use client"
+
 import Link from "next/link";
 import { ShoppingCart } from 'lucide-react';
 import { UserRoundPen } from 'lucide-react';
 import { Menu } from 'lucide-react';
 import Image from "next/image";
 import RechercheDeProduit from "./barreDeReche";
+import { PanierStore } from "../store global/panierStore";
 
 
 export const Navigation=()=>{
+  const NombreAuPanier=PanierStore((state)=>state.etatPanier)
     return(
     
           <header className="sticky top-0 z-50 w-full bg-white h-auto py-3">
@@ -39,6 +43,9 @@ export const Navigation=()=>{
                     </Link> */}
                     <Link href="/panier">
                       <ShoppingCart/>
+                      <div className="absolute top-0 right-5 text-cyan-400">
+                        <p>{NombreAuPanier.length} </p>
+                      </div>
                     </Link>
                   </div>
                   </section>
