@@ -11,15 +11,19 @@ const express=require('express');
 const app=express();
 // importe la route des Users
 // const Users=require('./routes/user.route');
-const Users=require('./controllers/user.controller');
+
 // importe la route des Utilisateur
 // const Admclient=require('./administration/admGestion/gestionClients/etatAdmClient');
 // route des produits
 // const AdmProduit=require("./administration/admGestion/gestionProduits/etatAdmProduit")
-const SacR=require('./controllers/produit.detail.controller')
+const EtatUser=require('./controllers/administration/user/admin.user.controller')
+const EtatProduit=require('./controllers/administration/produit/admin.produit.controller')
+const CommandePasse=require('./controllers/administration/commande/admin.commande.controller')
 // const CdDesUtilis=require("./utilisateur/actionUtilis/route/commande/commandeRoute")
+const Users=require('./controllers/user.controller');
 const Produit=require('./controllers/produit.controller')
 const Search=require('./controllers/search.produit.controller')
+
 
 
 
@@ -36,22 +40,16 @@ app.use(cors({ origin: ["https://olivi.vercel.app", "http://localhost:3000"],
 // permet de lire le fichiers json reçu
 app.use(express.json());
 
-// les route ou encore les API qui vont nous permettre de faire des requetes via frontend
-// 1- utilis:user
-app.use('/Use', Users)
+
+// Route utilisateur/client
+app.use('/use', Users)
 app.use('/produit', Produit)
 app.use('/produit', Search)
-// app.use('/ma', SacR)
-// 
-// app.use('/cd', CdDesUtilis)
-// 2- adm:admclient
-// app.use('/administration', Admclient)
-// 2- adm:admproduit
-// app.use('/administration', AdmProduit)
-// app.use('/produit', AdmProduit)
-// 
-// app.use('/Administration', CdDesUtilis)
 
-// 
-// on export l'app
+// pRoute administration
+app.use('/administration', EtatProduit)
+app.use('/administration', CommandePasse)
+app.use('/administration', EtatUser)
+
+
 module.exports=app;

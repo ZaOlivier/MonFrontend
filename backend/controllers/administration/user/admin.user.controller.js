@@ -1,6 +1,6 @@
 const express=require('express');
 const router= express.Router();
-const Admini=require('../models/user.model');
+const Admini=require('../../../models/user.model');
 
 router.get('/user_voir', async(req, res)=>{
     

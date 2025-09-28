@@ -1,8 +1,8 @@
 const express=require('express');
 const router= express.Router();
-const admini=require('../models/commande.model');
+const admini=require('../../../models/commande.model');
 
-router.get('/commande_read', async(req, res)=>{
+router.get('/commandeRead', async(req, res)=>{
     
     try{
 

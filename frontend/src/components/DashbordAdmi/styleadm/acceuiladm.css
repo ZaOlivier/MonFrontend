@@ -1,0 +1,35 @@
+.secadmacceuil{
+background-color: var(--back-adm);
+/* border:2px solid rgb(70, 234, 15); */
+ height: 100vh;
+ width: 100vw;
+}
+
+.admacceuil{
+    /* min-height:89%; */
+    height: auto;
+    width:10%;
+    /* border:2px solid rgb(222, 42, 42); */
+    position: fixed;
+    /* margin-right:20px; */
+    /* display: flex; */
+    /* margin: 10px; */
+    /* padding: 20px 20px 20px 6px; */
+    background-color: white;
+    padding-top: 0px,
+}
+
+.admacceuil button{
+    margin: 0;
+    width: 100%;
+
+}
+
+.pageEnVu{
+    /* border: 2px solid blue; */
+    margin-left: 240px;
+    width:auto;
+    position: fixed;
+    /* height: 80vh; */
+    background-color: white;
+}

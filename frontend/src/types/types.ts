@@ -4,6 +4,7 @@ export interface Produit {
     prix:number,
     image:string,
     description?:string,
+    __v:string
     
 }
 
@@ -18,10 +19,12 @@ export interface Produit {
 // }
 
 export interface User {
+    _id:string,
     nom: string,
     numero: string,
     email: string,
     motDePass: string,
+    __v:string
     
 }
 
@@ -45,4 +48,32 @@ export type Message={
 export interface QDeProduit{
 
    _id:string
+}
+
+export interface CommandePasser{
+    _id:string,
+    nom:string,
+    prix:number,
+    image:string,
+     __v:string
+    
+    lieuDeLivraison:String,
+    modePaiement:String,
+    
+    infoUserCd:{
+        // doit provenir de la collection User
+    nom:String,
+    prenom:String,
+    },
+    provenance:{
+    ville:String,
+    commune:String,
+    quartier:String
+    },
+    produitCommande:{
+        _id:string,
+        jourMoisAnneeHeure:Date,
+
+        
+    }
 }

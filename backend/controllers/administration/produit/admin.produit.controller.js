@@ -1,6 +1,6 @@
 const express=require('express');
 const router= express.Router();
-const admini=require('../models/produit.model');
+const admini=require('../../../models/produit.model');
 
 router.get('/produits_read', async(req, res)=>{
     

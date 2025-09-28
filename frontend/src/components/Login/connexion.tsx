@@ -1,8 +1,8 @@
-export default function Connexion(){
+export default function Inscription(){
+return(
+    <>
+        <p>con</p>
+    </>
+)
 
-    return(
-        <>
-            <p>Connexion</p>
-        </>
-    )
 }

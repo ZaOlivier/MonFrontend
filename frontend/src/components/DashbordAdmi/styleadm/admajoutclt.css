@@ -1,0 +1,30 @@
+
+.admclient{
+     border:2px solid blue;
+  
+}
+.admclient form{
+    display: block;
+    /* border: 2px solid red; */
+    height: auto;
+    /* margin: 10px 10px 10px 70px; */
+    
+    
+}
+
+.admclient input, button{
+    display: block;
+    margin-left:100px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 5vh;
+    width: 20vw;
+    border:2px solid blue;
+    
+}
+.admclient button{
+    width: 10vw;
+    margin-left:150px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
