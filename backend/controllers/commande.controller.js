@@ -3,7 +3,7 @@ const router= express.Router();
 const UserCommande=require('../models/commande.model');
 
 
-router.post('/commande_create', async (req, res)=>{
+router.post('/nouvelleCommande', async (req, res)=>{
 
     try{   
 

@@ -11,7 +11,7 @@ export const AdmVoirCd=()=>{
         e.preventDefault();
         try{
             const res= await
-            axios.get('http://localhost:5000/administration/commandeRead')
+            axios.get('https://olivi.onrender.com/administration/commandeRead')
             console.log(res.data);
             // (res.data)
             setAdmVoirCd(res.data)

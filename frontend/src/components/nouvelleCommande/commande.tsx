@@ -13,7 +13,7 @@ export default function NouvelleCommandePasse() {
             e.preventDefault();
         try{
             const res=await
-            axios.post('https://olivi.onrender.com/administration/commande_create', {
+            axios.post('https://olivi.onrender.com/commande/nouvelleCommande', {
             // infoUserCd: utilisateur._id,
             // produitCommande: produit._id,
             lieuDeLivraison: 'Abidjan',

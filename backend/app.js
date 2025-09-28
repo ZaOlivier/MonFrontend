@@ -23,6 +23,7 @@ const CommandePasse=require('./controllers/administration/commande/admin.command
 const Users=require('./controllers/user.controller');
 const Produit=require('./controllers/produit.controller')
 const Search=require('./controllers/search.produit.controller')
+const Commande=require('./controllers/commande.controller')
 
 
 
@@ -45,6 +46,7 @@ app.use(express.json());
 app.use('/use', Users)
 app.use('/produit', Produit)
 app.use('/produit', Search)
+app.use('/commande', Commande)
 
 // pRoute administration
 app.use('/administration', EtatProduit)
