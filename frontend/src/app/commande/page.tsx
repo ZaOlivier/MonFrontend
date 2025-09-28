@@ -5,6 +5,7 @@ import Inscription from "@/components/Login/inscription";
 import './commande.css'
 import { useRouter } from "next/navigation";
 import NouvelleCommandePasse from "@/components/nouvelleCommande/commande";
+// import ConfirmationCommande from "@/components/nouvelleCommande/confirmation";
 
 
 
@@ -27,9 +28,9 @@ export default function EtapeCd(){
                 return<NouvelleCommandePasse/>               
                 break;
 
-            // case 3:
-            //     return< ConfirmationCommande/>
-            //     break;
+            case 3:
+                // return< ConfirmationCommande/>
+                break;
 
             default:
                 return<NouvelleCommandePasse/>

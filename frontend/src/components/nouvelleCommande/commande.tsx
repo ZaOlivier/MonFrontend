@@ -1,4 +1,5 @@
 import axios from "axios";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function NouvelleCommandePasse() {
@@ -14,7 +15,7 @@ export default function NouvelleCommandePasse() {
             e.preventDefault();
         try{
             const res=await
-            axios.post('https://olivi.onrender.com/administration/commande_create', {
+            axios.post('https://olivi.onrender.com/commande/nouvelleCommande', {
             // infoUserCd:
             // produitCommande:
             modePaiement,
@@ -77,13 +78,15 @@ export default function NouvelleCommandePasse() {
             />
             <br />
 
+
+            <p>Moyen de paiement disponible :</p>
             <input type="checkbox" name="Paiement" id="Paiement"  required
                 value={modePaiement}
                 // placeholder="Vous souhaitez etre livré ou ?"
                 onChange={(e) =>
                 setModePaiement(e.target.value)}
             /> 
-            <label htmlFor="Paiement">Paiement à la livraison</label>
+            <label htmlFor="Paiement">Paiement à la livraison(si satisfait <Link href={'/information'} className="text-white">en savoir plus sur le sujet</Link>)</label><br />
             <button type="submit">Confirmer</button>
         </form>
 
