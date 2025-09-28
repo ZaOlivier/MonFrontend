@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { PanierStore } from "../store global/panierStore";
 import { QDeProduit } from "@/types/types";
 

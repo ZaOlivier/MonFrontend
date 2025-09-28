@@ -1,7 +1,6 @@
 
 
-import { PanierState, Produit} from '@/types/types';
-import { useState } from 'react';
+import { PanierState} from '@/types/types';
 import {create} from 'zustand';
 
 

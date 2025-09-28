@@ -10,7 +10,7 @@ export const AdmAjoutproduit=()=>{
     const[message, setMessage]=useState('');
     //  const[image, setDEs]=useState('');
    
-    const RoleAjoutprod=(async(e:any)=>{
+    const RoleAjoutprod=(async(e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
         try{
             const res= await
@@ -70,7 +70,7 @@ export const AdmAjoutproduit=()=>{
             />
            
             <br />
-            <button type="submit">L'ajouter</button>
+            <button type="submit">L&apos;ajouter</button>
         </form>
         
        

@@ -4,9 +4,9 @@ import { useState } from "react";
 
 export const AdmVoir=()=>{
     const[admvoir, setAdmvoir]=useState([]);
-    const[id, setId]=useState('');
+    // const[id, setId]=useState('');
 
-    const Rolecontroler=(async(e:any)=>{
+    const Rolecontroler=(async(e:React.MouseEvent<HTMLButtonElement>)=>{
         e.preventDefault();
         try{
             const res= await

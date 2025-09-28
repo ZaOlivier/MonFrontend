@@ -1,12 +1,13 @@
 import { Produit } from "@/types/types";
 import axios from "axios";
+import Image from "next/image";
 import { useState } from "react";
 
 export const AdmVoirprod=()=>{
     const[admvoirpod, setAdmvoirprod]=useState([]);
-    const[id, setId]=useState('');
+    // const[id, setId]=useState('');
 
-    const Rolecontrolerprod=(async(e:any)=>{
+    const Rolecontrolerprod=(async(e:React.MouseEvent<HTMLButtonElement>)=>{
         e.preventDefault();
         try{
             const res= await
@@ -99,7 +100,7 @@ export const AdmVoirprod=()=>{
                 <td style={{
                     background:"rgba(7, 226, 255, 1)",
                     color:"rgba(0, 0, 0, 1)"
-                }}><img src={prod.image} alt={prod.nom} width={50}/></td>
+                }}><Image src={prod.image} alt={prod.nom} width={50} height={50}/></td>
                 <td>{prod.__v}</td>
                
                 </tr>

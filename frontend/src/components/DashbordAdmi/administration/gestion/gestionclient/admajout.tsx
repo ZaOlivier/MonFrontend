@@ -2,6 +2,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import '../../../styleadm/admajoutclt.css'
+import { User } from "@/types/types";
 
 
 export const AdmAjout=()=>{
@@ -11,7 +12,7 @@ export const AdmAjout=()=>{
     const[email, setEmail]=useState('');
     const[message, setMessage]=useState('');
    
-    const RoleAjout=(async(e:any)=>{
+    const RoleAjout=(async(e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
         try{
             const res= await
@@ -72,7 +73,7 @@ export const AdmAjout=()=>{
                 setMotDePass(e.target.value)}
             />
             <br />
-            <button type="submit">L'ajouter</button>
+            <button type="submit">L&apos;ajouter</button>
         </form>
         
        
