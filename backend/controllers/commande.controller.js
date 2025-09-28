@@ -12,7 +12,7 @@ router.post('/nouvelleCommande', async (req, res)=>{
         res.send('Votre commande a été bien enregistrer et prise en compte')
 
     }catch(err){
-        res.json(Error)('Commande échoué viellez verifier vos information')
+        res.send(Error)('Commande échoué viellez verifier vos information')
     }
 
 });

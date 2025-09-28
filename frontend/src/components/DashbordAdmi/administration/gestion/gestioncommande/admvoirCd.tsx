@@ -68,22 +68,22 @@ export const AdmVoirCd=()=>{
             display:"block",
             // width:"40vw",
             maxHeight:"50vh",
-            width:"55vw",
+            width:"auto",
             overflow:"scroll",
             // overflowX:"hidden"
             }}>
     
-           <table style={{border:" 2px solid white",}}>
+           <table style={{border:" 2px solid white",}} className="w-[69vw]">
             <thead style={{
                 border:" 2px solid red",
                 background:"rgb(255, 218, 55)"
             }}>
                 <tr>
-                <th>id</th>
-                <th>Utilisateurs/clients</th>
+                <th> Commande id</th>
+                {/* <th>Utilisateurs/clients</th> */}
                 <th>prix</th>
                 <th>image url</th>
-                <th>action adm</th>
+                {/* <th>action adm</th> */}
                 </tr>
             </thead>
             <tbody style={{
@@ -98,10 +98,10 @@ export const AdmVoirCd=()=>{
                     background:"rgba(255, 173, 31, 1)",
                     color:"rgba(0, 0, 0, 1)"
                 }}>{prod.prix}</td>
-                <td style={{
+                {/* <td style={{
                     background:"rgba(7, 226, 255, 1)",
                     color:"rgba(0, 0, 0, 1)"
-                }}><Image src={prod.image} alt={prod.nom} width={50} height={50} /></td>
+                }}><Image src={prod.image} alt={prod.nom} width={50} height={50}/></td> */}
                 <td>{prod.__v}</td>
                
                 </tr>

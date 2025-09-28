@@ -8,11 +8,14 @@ const CommandeModel= new mongoose.Schema({
     infoUserCd:{
         type: mongoose.Schema.Types.ObjectId,
         ref: "User", // ← Référence à la collection User
-        required: true
+        // required: true
 
     },
     provenance:{
-        lieuDeLivraison:{type:String, require:true},
+        lieuDeLivraison:{
+        type:String, 
+        // require:true
+    },
         ville:String,
         commune:String,
         quartier:String
@@ -21,12 +24,12 @@ const CommandeModel= new mongoose.Schema({
     produitCommande:[{
      type: mongoose.Schema.Types.ObjectId,
      ref: "ProduitA",
-     required: true
+    //  required: true
    }],
 
     prixTotal: {
         type: Number,
-        required: true,
+        // required: true,
     },  
 
     dateCommande: {

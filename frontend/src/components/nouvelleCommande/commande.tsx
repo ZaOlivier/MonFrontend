@@ -6,6 +6,7 @@ export default function NouvelleCommandePasse() {
     const [commune, setCommune] = useState('');
     const [quartier, setQuartier] = useState('');
     const [lieuDeLivraison, setLieuDELivraison] = useState('');
+      const [modePaiement, setModePaiement] = useState('');
      const[message, setMessage]=useState('');
 
 
@@ -13,11 +14,10 @@ export default function NouvelleCommandePasse() {
             e.preventDefault();
         try{
             const res=await
-            axios.post('https://olivi.onrender.com/commande/nouvelleCommande', {
-            // infoUserCd: utilisateur._id,
-            // produitCommande: produit._id,
-            lieuDeLivraison: 'Abidjan',
-            modePaiement: 'Paiement à la livraison',
+            axios.post('https://olivi.onrender.com/administration/commande_create', {
+            // infoUserCd:
+            // produitCommande:
+            modePaiement,
             provenance: {
                 lieuDeLivraison,
                 ville,
@@ -25,20 +25,28 @@ export default function NouvelleCommandePasse() {
                 quartier
             }
             })
-            setInterval(() => {
+            // setInterval(() => {
                 setMessage(res.data)
-            }, 100);
-            console.log(message);
+            // }, 100);
+            console.log(modePaiement);
+            console.log(lieuDeLivraison);
+            console.log(ville);
+            console.log(commune);
+            console.log(quartier);
             
 
         }catch(err){
-            console.error((err))
+            const vi=console.error((err),'erreur')
+            console.log(vi);
+            
         }
     })
 
     return(
         <>
-        
+            <div>
+                <p>{message} </p>
+            </div>
         <form onSubmit={Commande} >
             <input type="text" 
                 value={ville}
@@ -69,13 +77,16 @@ export default function NouvelleCommandePasse() {
             />
             <br />
 
-            <input type="checkbox" name="Paiement" id="Paiement"  required/> <label htmlFor="Paiement">Paiement à la livraison</label>
+            <input type="checkbox" name="Paiement" id="Paiement"  required
+                value={modePaiement}
+                // placeholder="Vous souhaitez etre livré ou ?"
+                onChange={(e) =>
+                setModePaiement(e.target.value)}
+            /> 
+            <label htmlFor="Paiement">Paiement à la livraison</label>
             <button type="submit">Confirmer</button>
         </form>
 
-                    <div>
-                        <h4>{message} </h4>
-                    </div>
         </>
     )
     
