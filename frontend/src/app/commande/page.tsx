@@ -1,11 +1,11 @@
 "use client"
 
-
-import Connexion from "@/components/Login/connexion";
 import { useState } from "react";
 import Inscription from "@/components/Login/inscription";
 import './commande.css'
 import { useRouter } from "next/navigation";
+import NouvelleCommandePasse from "@/components/nouvelleCommande/commande";
+
 
 
 
@@ -24,15 +24,16 @@ export default function EtapeCd(){
 
                 break;
             case 2:              
-                return<Inscription/>               
+                return<NouvelleCommandePasse/>               
                 break;
 
-            case 4:
-                return<Connexion />
-                break;
+            // case 3:
+            //     return< ConfirmationCommande/>
+            //     break;
 
             default:
-                return<Connexion/>
+                return<NouvelleCommandePasse/>
+               
         }
     }
 
@@ -40,7 +41,7 @@ export default function EtapeCd(){
 
 
      const suivant = () => {
-        if (etape<=3) {
+        if (etape<=1) {
             setEtape(prev => prev + 1);}
             // setPagzVu('b')
             // setPagzVu('b')
@@ -62,13 +63,13 @@ if (etape === 1) {
     return(
             <>
             {/* permet de suivre les etape pour la commande */}
-            <p>{etape}</p>
+            <p>Etape {etape}/2</p>
 
             <div className="stepper">
-            <div className={etape>= 1 ? "step active" : "step"}>Formulaire de commande </div>
-            <div className={etape >= 2 ? "step active" : "step"}>Mode de paiement</div>
-            <div className={etape >= 3 ? "step active" : "step"}>verification</div>
-            <div className={etape >= 4 ? "step active" : "step"}>Confirmation</div>
+            <div className={etape>= 1 ? "step active" : "step"}>verification </div>
+            <div className={etape >= 2 ? "step active" : "step"}>Formulaire de commande</div>
+            {/* <div className={etape >= 3 ? "step active" : "step"}>Confirmation</div> */}
+            {/* <div className={etape >= 4 ? "step active" : "step"}>Confirmation</div> */}
             </div>
             {/* <div className="lapage"> */}
             <EtapeC/>

@@ -9,6 +9,8 @@ import AddToCartButton from "../button/btnAjouterPanier";
 
 
 export default async function CardHorizontal6Prod(){
+    // const indexSouhaite = [0,1,3,4, 2, 5];
+
    
     try{
         const res = await
@@ -33,7 +35,9 @@ export default async function CardHorizontal6Prod(){
                        
                         
                         
-                                {produit.map((Article:Produit, inxdex:string)=>(
+                                {/* {produit.filter((_:any,index:number) => indexSouhaite.includes(index))
+                                    .map((Article:Produit, inxdex:string)=>( */}
+                                    {produit.slice(0,6).map((Article:Produit, inxdex:string)=>(
 
                                     <div key={inxdex} className="h-1OO bg-white pl-2 round"  >
 
