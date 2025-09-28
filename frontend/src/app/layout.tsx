@@ -1,5 +1,5 @@
 
-
+import { Analytics } from "@vercel/analytics/next"
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import HeaderGene from "@/components/barreNavi/headerGene";
@@ -97,6 +97,7 @@ export default function RootLayout({
       <body >
         <HeaderGene/>
         <main>{children}</main>
+        <Analytics/>
       </body>
       
     </html>
