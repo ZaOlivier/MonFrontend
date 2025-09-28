@@ -57,18 +57,18 @@ export interface CommandePasser{
     image:string,
      __v:string
     
-    lieuDeLivraison:String,
-    modePaiement:String,
+    lieuDeLivraison:string,
+    modePaiement:string,
     
     infoUserCd:{
         // doit provenir de la collection User
-    nom:String,
-    prenom:String,
+    nom:string,
+    prenom:string,
     },
     provenance:{
-    ville:String,
-    commune:String,
-    quartier:String
+    ville:string,
+    commune:string,
+    quartier:string
     },
     produitCommande:{
         _id:string,

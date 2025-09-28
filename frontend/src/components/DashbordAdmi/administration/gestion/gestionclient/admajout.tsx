@@ -2,7 +2,6 @@
 import axios from "axios";
 import React, { useState } from "react";
 import '../../../styleadm/admajoutclt.css'
-import { User } from "@/types/types";
 
 
 export const AdmAjout=()=>{
