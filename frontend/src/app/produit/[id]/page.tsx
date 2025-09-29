@@ -17,7 +17,7 @@ export default async function Page({ params }: { params: Paramettre }) {
   const produit = await fetchProduit(params.id)
   console.log(produit);
  
-  
+  // encore
   
   if (!produit) {
     return <p>Produit introuvable</p>;
