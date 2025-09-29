@@ -1,4 +1,4 @@
-import { Paramettre } from "@/types/types";
+import {Props } from "@/types/types";
 import axios from "axios";
 import Image from "next/image";
 
@@ -13,7 +13,9 @@ const fetchProduit = async (id:string) => {
   
 };
 
-export default async function Page({ params }: { params: Paramettre }) {
+// { params: Paramettre })
+
+export default async function Page({ params }:Props)  {
   const produit = await fetchProduit(params.id)
   console.log(produit);
  

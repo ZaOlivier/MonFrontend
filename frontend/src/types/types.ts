@@ -79,6 +79,9 @@ export interface CommandePasser{
 };
 
 
-export type Paramettre = {
-  id: string;
+ export type Props = {
+  params: {
+    id: string;
+  };
 };
+
