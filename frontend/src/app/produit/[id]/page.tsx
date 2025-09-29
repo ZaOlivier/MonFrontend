@@ -1,5 +1,6 @@
 import { Paramettre } from "@/types/types";
 import axios from "axios";
+import Image from "next/image";
 
 const fetchProduit = async (id:string) => {
   try {
@@ -24,7 +25,9 @@ export default async function Page({ params }: { params: Paramettre }) {
 
   return (
     <div>
+      <Image src={produit.image} alt={produit.nom} width={230} height={300}/>
       <h1>{produit.nom}</h1>
+      <p>{produit.prix} </p>
       <p>{produit.description}</p>
       {/* Ajoute ici le reste des infos */}
     </div>
