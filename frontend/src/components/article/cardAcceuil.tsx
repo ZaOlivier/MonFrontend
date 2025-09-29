@@ -1,4 +1,5 @@
 
+export const dynamic = 'force-dynamic'; // utile si la data change souvent
 
 import axios from "axios"
 import { Produit } from "@/types/types";
@@ -43,7 +44,7 @@ export default async function CardHorizontal6Prod(){
 
                                         <article className="flex w-40 " >
 
-                                            <Link href={'/detail'}>
+                                            <Link href={`produit/${Article._id}`}>
 
                                                 <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
                                                 <p>{Article.nom } </p>

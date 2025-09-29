@@ -14,7 +14,7 @@ export default function NouvelleCommandePasse() {
     const Commande=(async(e:React.FormEvent<HTMLFormElement>)=>{
             e.preventDefault();
         try{
-            const res=await
+            const res= await
             axios.post('https://olivi.onrender.com/commande/nouvelleCommande', {
             // infoUserCd:
             // produitCommande:

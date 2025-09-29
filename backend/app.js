@@ -24,6 +24,7 @@ const Users=require('./controllers/user.controller');
 const Produit=require('./controllers/produit.controller')
 const Search=require('./controllers/search.produit.controller')
 const Commande=require('./controllers/commande.controller')
+const PageProduit=require('./controllers/Page.produit.controller copy')
 
 
 
@@ -47,6 +48,7 @@ app.use('/use', Users)
 app.use('/produit', Produit)
 app.use('/produit', Search)
 app.use('/commande', Commande)
+app.use('/produit', PageProduit)
 
 // pRoute administration
 app.use('/administration', EtatProduit)

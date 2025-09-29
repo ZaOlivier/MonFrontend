@@ -76,4 +76,11 @@ export interface CommandePasser{
 
         
     }
+};
+
+export interface Paramettre{
+    // params:{
+        id:string
+    // }
+
 }
