@@ -3,6 +3,7 @@
 import {ShoppingCart, UserRoundPen } from "lucide-react";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
+import { House } from 'lucide-react'
 
 export default function MobilNavigation(){
     const NombreAuPanier=PanierStore((state)=>state.etatPanier)
@@ -16,7 +17,7 @@ export default function MobilNavigation(){
                       
                     </Link> */}
                     <Link href="/">
-                      <UserRoundPen className="mx-3"/>
+                      <House className="mx-3"/>
                       <p>Accueil</p>
                     </Link>
                   </div>
