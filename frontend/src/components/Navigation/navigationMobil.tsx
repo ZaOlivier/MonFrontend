@@ -1,9 +1,10 @@
 "use client"
 
-import {ShoppingCart, UserRoundPen } from "lucide-react";
+import {ShoppingCart, UserRoundPen} from "lucide-react";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
 import { House } from 'lucide-react'
+import { SquareLibrary } from 'lucide-react';
 
 export default function MobilNavigation(){
     const NombreAuPanier=PanierStore((state)=>state.etatPanier)
@@ -26,7 +27,7 @@ export default function MobilNavigation(){
                       
                     </Link> */}
                     <Link href="/categories">
-                      <UserRoundPen className="mx-6"/>
+                      <SquareLibrary className="mx-6"/>
                       <p>Categories</p>
                     </Link>
                   </div>              
