@@ -24,7 +24,7 @@ export default function SimulationRecherche(){
             </button>
             </Link>
             <Link href="#">
-            <p className="text-amber-300">Besion d'aide?</p>
+            <p className="text-amber-300">Besion d&apos;aide?</p>
             </Link>
         {/* </form> */}
         </div>

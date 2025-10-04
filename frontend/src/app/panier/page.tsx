@@ -32,7 +32,7 @@ const MonPanier=()=>{
                         <Image src="/next.svg" alt="olvi vente en ligne" width={115} height={300} priority/>
                       </Link>
                     </div>
-                    <p className="text-amber-300">Besion d'aide?</p>
+                    <p className="text-amber-300">Besion d&apos;aide?</p>
         {/* <form className="mx-1" > */}
             {/* <input type="search" placeholder="Rechercher d'autre produit..."
                 className="w-full h-[5vh] text-center 

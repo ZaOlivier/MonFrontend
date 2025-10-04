@@ -1,4 +1,3 @@
-import { BaniereHeader } from "../baniere/baniereInfos";
 import { Navigation } from "../Navigation/Navigation";
 
 export default function HeaderGene(){

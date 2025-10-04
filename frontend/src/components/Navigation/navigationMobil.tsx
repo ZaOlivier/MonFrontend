@@ -1,6 +1,6 @@
 "use client"
 
-import { Dice1, ShoppingCart, UserRoundPen } from "lucide-react";
+import {ShoppingCart, UserRoundPen } from "lucide-react";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
 

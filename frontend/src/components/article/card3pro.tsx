@@ -1,5 +1,5 @@
 import Link from "next/link";
-import AddToCartButton from "../button/btnAjouterPanier";
+// import AddToCartButton from "../button/btnAjouterPanier";
 
 export default function Card3pro(){
 
@@ -11,12 +11,12 @@ export default function Card3pro(){
 
                     </div>
                     <div>
-                        <section className="text-sm block">Voir d'autre categorie :
+                        <section className="text-sm block">Voir d&apos;autre categorie :
                         <Link href="#">Telephone</Link><br />
                         <Link href="#" className="block">Chaussure local</Link>
                         <Link href="#">montre</Link>
                         <Link href="#"></Link>
-                        <AddToCartButton/>
+                        
                         </section>
                     </div>
                 </div>
