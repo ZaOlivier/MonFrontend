@@ -22,12 +22,12 @@ export default async function CardHorizontal6Prod(){
         return(
             <>
                 <div >
-                    <div className="py-2">
-                        <section className="bg-white conten">
-                            <header className="bg-red-600 h-10">
-                                <div className="pl-3">
+                    <div className="py-2 border-2">
+                        <section className="bg-white conten border-2">
+                            <header className="bg-red-600 h-10 border-2">
+                                <div className="pl-3 border-2">
 
-                                    <p >Notre nouvelle gamme</p>
+                                    <p>Notre nouvelle gamme</p>
 
                                 </div>
                             
@@ -38,11 +38,11 @@ export default async function CardHorizontal6Prod(){
                         
                                 {/* {produit.filter((_:any,index:number) => indexSouhaite.includes(index))
                                     .map((Article:Produit, inxdex:string)=>( */}
-                                    {produit.slice(0,6).map((Article:Produit, inxdex:string)=>(
+                                    {produit.slice(0, 1).map((Article:Produit, inxdex:string)=>(
 
-                                    <div key={inxdex} className="h-1OO bg-white pl-2 round"  >
+                                    <div key={inxdex} className="h-1OO bg-white pl-2 round border-2"  >
 
-                                        <article className="flex w-40 " >
+                                        <article className="flex w-40 border-2" >
 
                                             <Link href={`produit/${Article._id}`}>
 

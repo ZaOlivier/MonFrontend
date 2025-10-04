@@ -2,10 +2,18 @@
 
 
 
+
 :root {
   --background: #fe8819;
   --foreground: #171717;
+  --color-primaire: #2563eb;
+  --color-secondaire: #22c55e;
+  --text-primaire: #000000;
+  --bg-primaire: #ffffff;
 }
+
+
+
 
 /* @theme inline {
   --color-background: var(--background);
@@ -26,7 +34,7 @@ body {
   /* border:2px solid #ffffff; */
   min-height: 100vh;
   /* min-height: 80vh; */
-  background: var(--background);
+  /* background: var(--background); */
   /* color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
   /* background-image: url(./favicon.ico); */

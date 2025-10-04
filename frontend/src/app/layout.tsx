@@ -2,8 +2,10 @@
 import { Analytics } from "@vercel/analytics/next"
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-import HeaderGene from "@/components/barreNavi/headerGene";
+// import HeaderGene from "@/components/barreNavi/headerGene";
 import "../styles/globals.css";
+import MobilNavigation from "@/components/Navigation/navigationMobil";
+// import RechercheDeProduit from "@/components/Navigation/barreDeReche";
 // import Head from "next/head";
 
 
@@ -94,10 +96,12 @@ export default function RootLayout({
         <meta name="twitter:description" content="Achetez en toute confiance en ligne."/>
         <meta name="twitter:image" content="https://olivi.vercel.app/og-image.jpg"/>
         </head>
-      <body >
-        <HeaderGene/>
-        <main>{children}</main>
+      <body className="text-sm" >
+        {/* <HeaderGene/> */}
+         {/* <RechercheDeProduit/> */}
+        <main className="h-[88vh]">{children}</main>
         <Analytics/>
+        <MobilNavigation/>
       </body>
       
     </html>

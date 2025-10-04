@@ -26,6 +26,22 @@ const MonPanier=()=>{
     // ):(
     //     <>
        <>
+       <div className='flex fixed border-b-2 border-b-gray-200 bg-white h-14 py-2 w-full '>
+               <div className="w-auto ml-2 mr-16  py-1 sm:mr-70" >
+                      <Link href="/produit" >
+                        <Image src="/next.svg" alt="olvi vente en ligne" width={115} height={300} priority/>
+                      </Link>
+                    </div>
+                    <p className="text-amber-300">Besion d'aide?</p>
+        {/* <form className="mx-1" > */}
+            {/* <input type="search" placeholder="Rechercher d'autre produit..."
+                className="w-full h-[5vh] text-center 
+                rounded-2xl bg-gray-200"
+                      
+            /> */}
+            
+        {/* </form> */}
+        </div>
         {panier.map((produit, _id)=>
         
             <div key={_id} className="h-1OO m-3">
