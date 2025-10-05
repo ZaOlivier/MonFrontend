@@ -1,6 +1,7 @@
 // import {Props } from "@/types/types";
 import AddToCartButton from "@/components/button/btnAjouterPanier";
 import SimulationRecherche from "@/components/Navigation/simulationBarreRech";
+import { Props } from "@/types/types";
 import axios from "axios";
 import Image from "next/image";
 
@@ -16,7 +17,7 @@ const fetchProduit = async (id:string) => {
 };
 
 
-export default async function Page({ params }:{params : {id:any}})  {
+export default async function Page(params:Props)  {
   const produit = await fetchProduit(params.id)
   console.log(produit);
  
