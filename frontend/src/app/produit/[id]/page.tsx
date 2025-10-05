@@ -16,7 +16,7 @@ const fetchProduit = async (id:string) => {
 };
 
 
-export default async function Page({ params }:{params : {id:string}})  {
+export default async function Page({ params }:{params : {id:any}})  {
   const produit = await fetchProduit(params.id)
   console.log(produit);
  
