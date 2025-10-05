@@ -1,4 +1,6 @@
 // import {Props } from "@/types/types";
+import AddToCartButton from "@/components/button/btnAjouterPanier";
+import SimulationRecherche from "@/components/Navigation/simulationBarreRech";
 import axios from "axios";
 import Image from "next/image";
 
@@ -25,13 +27,17 @@ export default async function Page({ params }:{params : {id:string}})  {
   }
 
   return (
+    <>
+    <SimulationRecherche/>
     <div>
       <Image src={produit.image} alt={produit.nom} width={230} height={300}/>
       <h1>{produit.nom}</h1>
       <p>{produit.prix} </p>
       <p>{produit.description}</p>
       {/* Ajoute ici le reste des infos */}
+      <AddToCartButton produit={produit}/>
     </div>
+    </>
   );
 }
 

@@ -30,14 +30,14 @@ export default function SimulationRecherche(){
                     </Link> */}
                     <Link href="/#">
                       <UserRoundPen className="mx-3.5"/>
-                      <p>Compte</p>
+                      {/* <p>Compte</p> */}
                     </Link>
                   </div>
             
             
             {!NombreAuPanier || NombreAuPanier.length === 0 ?( <div><Link href="/#">
             {/* <UserCircle/> */}
-            <p className="text-amber-300 border-l-2">Besion d&apos;aide?</p>
+            <p className="text-amber-300 border-l-2">Besion <br />d&apos;aide?</p>
             </Link></div>
 
         ):(

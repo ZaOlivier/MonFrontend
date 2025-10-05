@@ -1,8 +1,9 @@
+// import AddToCartButton from "@/components/button/btnAjouterPanier";
 import { ListeNouv } from "@/homme DB/listeProduits/listeProd";
-import { Produit } from "@/types/types";
+// import { Produit } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
-import AddToCartButton from "../button/btnAjouterPanier";
+
 
 export default function CardPromo(){
 
@@ -19,7 +20,7 @@ export default function CardPromo(){
                         <p>{Article.prix} </p>
                         </Link>
                         </article>
-                        <AddToCartButton produit={Article}/>
+                        {/* <AddToCartButton produit={Article}/> */}
 
                     </div>
 
