@@ -1,4 +1,5 @@
 import VetementFemme from "@/components/article/acceuil/CardFvetement";
+import CardPromo from "@/components/article/acceuil/cardPromo";
 import Sac from "@/components/article/acceuil/CardSac";
 import Promo from "@/components/article/acceuil/promo";
 // import CardPromo from "@/components/article/cardPromo";
@@ -14,15 +15,15 @@ export default function Home () {
    <>
       <SimulationRecherche/>
       <div><h5 className="bg-white text-blue-600 text-center border-1 w-100%">Expose tes gammes de produit sur Olivi</h5></div>
-      <Sac/>
+      {/* <Sac/>
       <Promo/>
-      <VetementFemme/>
-      {/* <CardPromo/>
+      <VetementFemme/> */}
       <CardPromo/>
       <CardPromo/>
       <CardPromo/>
       <CardPromo/>
-      <CardPromo/> */}
+      <CardPromo/>
+      <CardPromo/>
       
    </>
   )
