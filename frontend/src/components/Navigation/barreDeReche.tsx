@@ -4,6 +4,7 @@ import { Search } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+import "../../styles/responsiveCss.css"
 
 export default function RechercheDeProduit(){
     const[query, setQuery]=useState('')
@@ -17,9 +18,10 @@ export default function RechercheDeProduit(){
     }
 
     return(
-        <div className='fixed bg-white h-14 py-2 w-full'>
-        <form onSubmit={handleClick}  className="mx-1" >
-            <input type="search" name="" id="" placeholder="Recherche sur Olivi"
+        <div className='fixed bg-white h-14 py-2 w-full' id='respPageRecherche'>
+        <form onSubmit={handleClick}  className="mx-1"  >
+            <input type="search" name="" placeholder="Recherche sur Olivi" 
+                id='respPageRechercheInput'
                 autoComplete="search"
                 value={query}
                 onChange={(e)=> setQuery(e.target.value)}
@@ -27,7 +29,7 @@ export default function RechercheDeProduit(){
                 rounded-2xl mr-2"
                       
             />
-            <button type="submit" className="mx-1 absolute right-70 top-3">
+            <button type="submit" className="mx-1 absolute right-70 top-3" id='respPageRechercheBottom'>
                 <Search/>
             </button>
             <Link href="/">

@@ -11,7 +11,7 @@ export default function MobilNavigation(){
 
     return(
         <>
-            <div className="fixed bg-white w-full h-20 text-sm border-t-1 border-t-gray-300">
+            <div className="fixed bg-amber-300 w-full text-sm border-t-1 border-t-gray-300 pb-40 block md:hidden">
                 <section className="flex w-100% px-1.5  justify-center my-3">
                     <div className="w-auto mr-2  sm:w-1/2">
                     {/* <Link href="/commande">

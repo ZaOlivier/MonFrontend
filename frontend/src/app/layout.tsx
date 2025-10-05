@@ -5,6 +5,8 @@ import { Analytics } from "@vercel/analytics/next"
 // import HeaderGene from "@/components/barreNavi/headerGene";
 import "../styles/globals.css";
 import MobilNavigation from "@/components/Navigation/navigationMobil";
+import Link from "next/link";
+import Image from "next/image";
 // import RechercheDeProduit from "@/components/Navigation/barreDeReche";
 // import Head from "next/head";
 
@@ -66,7 +68,7 @@ import MobilNavigation from "@/components/Navigation/navigationMobil";
 
 
 
-export default function RootLayout({
+export default function LayoutPanier({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -99,9 +101,9 @@ export default function RootLayout({
       <body className="text-sm" >
         {/* <HeaderGene/> */}
          {/* <RechercheDeProduit/> */}
-        <main className="h-[88vh]">{children}</main>
+        
+        <main className="">{children}</main>
         <Analytics/>
-        <MobilNavigation/>
       </body>
       
     </html>

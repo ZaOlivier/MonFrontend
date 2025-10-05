@@ -1,14 +1,31 @@
+import { ListeNouv } from "@/homme DB/listeProduits/listeProd";
+import { Produit } from "@/types/types";
+import Image from "next/image";
+import Link from "next/link";
+import AddToCartButton from "../button/btnAjouterPanier";
+
 export default function CardPromo(){
 
     return(
         <><br />
-            <div className="flex w-full h-28 border-2 border-amber-300">
-                <div>
-                    <div>
+            
+                <div className="flex overflow-x-auto scrollbar-hidden">
+                   {ListeNouv.map((Article, index)=>(
+                    <div key={index} className="">
+                        <article className="flex w-40" >
+                        <Link href={`produit/${Article._id}`}>
+                        <Image src={Article.image} alt={Article.nom} width={300} height={300}/>
+                        <p>{Article.nom} </p>
+                        <p>{Article.prix} </p>
+                        </Link>
+                        </article>
+                        <AddToCartButton produit={Article}/>
 
                     </div>
+
+                   ))}
                 </div>
-            </div>
+           
         </>
     )
 

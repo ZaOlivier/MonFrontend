@@ -1,12 +1,26 @@
+import { StaticImageData } from "next/image";
+
 export interface Produit {
-    _id:string,
-    nom:string,
-    prix:number,
-    image:string,
-    description?:string,
-    __v:string
+      _id: string;
+    nom: string;
+    prix: number;
+    image: StaticImageData;
+    quantite: number;
+    __v: number;
+    compl: string;
+    magasin: string;
     
 }
+
+// export interface Produit {
+//     _id:string,
+//     nom:string,
+//     prix:number,
+//     image:StaticImageData,
+//     description?:string,
+//     __v:string
+    
+// }
 
 // export interface panier {
 //     _id:string,
@@ -25,6 +39,7 @@ export interface User {
     email: string,
     motDePass: string,
     __v:string
+    
     
 }
 
