@@ -34,7 +34,7 @@ export default async function Promo(){
                             <div className="grid grid-cols-2 gap-4">
                        
                                   
-                                {produit.filter((_:any,index:number) => indexSouhaite.includes(index))
+                                {produit.filter((_:Produit,index:number) => indexSouhaite.includes(index))
                                     .map((Article:Produit, inxdex:string)=>(
                                     // {produit.slice(0, 6).map((Article:Produit, inxdex:string)=>(
 

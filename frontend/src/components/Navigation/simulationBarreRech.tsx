@@ -4,15 +4,9 @@ import { Menu, ShoppingCart, UserRoundPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
-import PageRecherche from "@/app/recherche/page";
 
 export default function SimulationRecherche(){
     const NombreAuPanier=PanierStore((state)=>state.etatPanier)
-     const handleClick=(e:any)=>{
-        e.preventDefault()
-    
-            return<PageRecherche/>
-    }
     return(
         <div className="sticky bg-white h-24 py-2 w-full top-0 z-50">
         <div className='flex mb-2'>

@@ -35,7 +35,7 @@ export default async function Sac(){
                             <div className="flex overflow-x-auto scrollbar-hidden">
                        
                                   
-                                {produit.filter((_:any,index:number) => indexSouhaite.includes(index))
+                                {produit.filter((_:Produit,index:number) => indexSouhaite.includes(index))
                                     .map((Article:Produit, inxdex:string)=>(
                                     // {produit.slice(0, 6).map((Article:Produit, inxdex:string)=>(
 

@@ -3,7 +3,6 @@
 import QDeProduitDansLePanier from "@/components/augmenterQProduitPanier/QproduitP";
 import SimulationRecherche from "@/components/Navigation/simulationBarreRech";
 import { PanierStore } from "@/components/store global/panierStore";
-import { Menu, UserRoundPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

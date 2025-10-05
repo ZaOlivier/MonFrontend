@@ -56,7 +56,6 @@ export default  function PageDeRecherche(){
           <Image src={p.image} alt={p.nom} width={300} height={300} className="w-full h-40 object-cover" />
           <h2 className="text-lg font-semibold">{p.nom}</h2>
           <p>{p.prix} FCFA</p>
-          <p className="text-sm text-gray-600">{p.description}</p>
            <div className="my-2">
             <AddToCartButton produit={p}/>
            </div>
