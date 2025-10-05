@@ -1,4 +1,4 @@
-
+/* Accueil */
 @media screen and (min-width:360px) {
     #respCompte{
         margin-left: 60px;
@@ -11,7 +11,88 @@
      /* margin: 0; */
      /* top:70; */
      height: 4vh;
+    }
+    #respPanierCount{
+        position: absolute;
+        bottom: 12px;
+        right:50px
+    }
+    #respPageRechercheInput{
+        width: 84%;
+        /* border: 2px solid black */
+    }
+    #respPageRechercheBottom{
+        right: 324px;
+    }
+}
+@media screen and (min-width:375px) {
+     #respCompte{
+        margin-left: 76px;
+    }
+    #respPanier{
+     animation-delay: 400ms;
+     position: sticky;
+     width: auto; 
+     left: 278px; 
+     /* top:0px; */
+     bottom: 200px;
+     /* z-index: 50px; */
+     height: 3vh;
      /* background-color: red; */
+    }
+
+      #respPanierCount{
+        position: absolute;
+        bottom: 10px;; 
+        /* right:13 */
+    }
+    #respPageRechercheInput{ 
+        height: 4vh;
+    }
+    #respPageRechercheBottom{
+        right: 340px;
+    }
+    
+}
+@media screen and (min-width:414px) {
+     #respCompte{
+        margin-left: 100px;
+        /* border: 2px solid black; */
+    }
+    #respPanier{
+     animation-delay: 400ms;
+     position: sticky;
+     width: auto; 
+     left: 290px; 
+     /* top:0px; */
+     bottom: 200px;
+     /* z-index: 50px; */
+     height: 3vh;
+     background-color: rgb(28, 21, 242);
+    }
+
+      #respPanierCount{
+        position: absolute;
+        bottom: 10px;; 
+        /* right:13 */
+    }
+    #respPageRechercheBottom{
+        right: 378px;
+    }   
+}
+/* Panier */
+@media screen and (min-width:360px) {
+    #respCompte{
+        margin-left: 60px;
+    }
+    #respPanier{
+     animation-delay: 400ms;
+     position: absolute;
+     width: auto;
+     left: 255px; 
+     /* margin: 0; */
+     /* top:70; */
+     height: 4vh;
     }
     #respPanierCount{
         position: absolute;

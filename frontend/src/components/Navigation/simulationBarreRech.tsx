@@ -1,13 +1,18 @@
 "use client"
 
-import { Menu, Search, ShoppingCart, UserCircle, UserRoundPen } from "lucide-react";
+import { Menu, ShoppingCart, UserRoundPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
-import "../../styles/responsiveCss.css"
+import PageRecherche from "@/app/recherche/page";
 
 export default function SimulationRecherche(){
     const NombreAuPanier=PanierStore((state)=>state.etatPanier)
+     const handleClick=(e:any)=>{
+        e.preventDefault()
+    
+            return<PageRecherche/>
+    }
     return(
         <div className="sticky bg-white h-24 py-2 w-full top-0 z-50">
         <div className='flex mb-2'>
@@ -23,14 +28,14 @@ export default function SimulationRecherche(){
                     {/* <Link href="/commande">
                       
                     </Link> */}
-                    <Link href="/panier">
+                    <Link href="/#">
                       <UserRoundPen className="mx-3.5"/>
                       <p>Compte</p>
                     </Link>
                   </div>
             
             
-            {!NombreAuPanier || NombreAuPanier.length === 0 ?( <div><Link href="#">
+            {!NombreAuPanier || NombreAuPanier.length === 0 ?( <div><Link href="/#">
             {/* <UserCircle/> */}
             <p className="text-amber-300 border-l-2">Besion d&apos;aide?</p>
             </Link></div>

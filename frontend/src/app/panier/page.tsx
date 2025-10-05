@@ -1,9 +1,12 @@
 "use client"
 
 import QDeProduitDansLePanier from "@/components/augmenterQProduitPanier/QproduitP";
+import SimulationRecherche from "@/components/Navigation/simulationBarreRech";
 import { PanierStore } from "@/components/store global/panierStore";
+import { Menu, UserRoundPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 
 
 
@@ -14,29 +17,8 @@ const MonPanier=()=>{
     const Supprimer=PanierStore((state)=>state.SupprimerDuPanier)
 
     return(
-    //     <>
-
-
-    //     {panier.length === 0 ?(
-      
-
-    //     <p>rien</p>
-     
-
-    // ):(
-    //     <>
-       <>
-       <div className='flex fixed border-b-2 border-b-gray-200 bg-white h-14 py-2 w-full '>
-             
-        {/* <form className="mx-1" > */}
-            {/* <input type="search" placeholder="Rechercher d'autre produit..."
-                className="w-full h-[5vh] text-center 
-                rounded-2xl bg-gray-200"
-                      
-            /> */}
-            
-        {/* </form> */}
-        </div>
+        <>
+            <SimulationRecherche/>
         {panier.map((produit, _id)=>
         
             <div key={_id} className="h-1OO m-3">
@@ -52,34 +34,15 @@ const MonPanier=()=>{
              </div>
         
         )}
-    
-       </>
+    </>
     )}
-    //     </>
-
-
-    // )}
-        
-    //    </>   
-    // )} 
-
+       
     
-
-               
-            
-        
-            
-            
-            
-        
-    
-    
-
 
 export default MonPanier;
 
-// {panier.map((produit)=>
-//             <div key={produit._id} className="h-1OO m-3">
+{/* // {panier.map((produit)=> */}
+{/* //             <div key={produit._id} className="h-1OO m-3">
 //                 <div className="w-20  ">
 //                     <Image src={produit.image} alt={produit.nom} width={300} height={300}/>
                     
@@ -88,4 +51,4 @@ export default MonPanier;
 //                     <button onClick={()=>Supprimer(produit._id)}>supprimer</button>
 //                 </div>
 //             </div>
-//         )}
+//         )} */}

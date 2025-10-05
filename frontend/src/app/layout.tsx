@@ -4,9 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 // import { Geist, Geist_Mono } from "next/font/google";
 // import HeaderGene from "@/components/barreNavi/headerGene";
 import "../styles/globals.css";
-import MobilNavigation from "@/components/Navigation/navigationMobil";
-import Link from "next/link";
-import Image from "next/image";
+import "../styles/responsiveCss.css"
 // import RechercheDeProduit from "@/components/Navigation/barreDeReche";
 // import Head from "next/head";
 
