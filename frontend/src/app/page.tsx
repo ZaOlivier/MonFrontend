@@ -1,7 +1,4 @@
-import VetementFemme from "@/components/article/acceuil/CardFvetement";
 import CardPromo from "@/components/article/acceuil/cardPromo";
-import Sac from "@/components/article/acceuil/CardSac";
-import Promo from "@/components/article/acceuil/promo";
 // import CardPromo from "@/components/article/cardPromo";
 import SimulationRecherche from "@/components/Navigation/simulationBarreRech";
 
