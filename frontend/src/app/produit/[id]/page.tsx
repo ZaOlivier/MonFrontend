@@ -17,7 +17,7 @@ const fetchProduit = async (id:string) => {
 };
 
 
-async function Page(params:Props)  {
+export default async function Page(params:Props)  {
   const produit = await fetchProduit(params.id)
   console.log(produit);
  
@@ -40,5 +40,5 @@ async function Page(params:Props)  {
     </>
   );
 }
-export default Page;
+
 // b
