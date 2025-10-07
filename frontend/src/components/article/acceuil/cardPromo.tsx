@@ -1,4 +1,5 @@
 // import AddToCartButton from "@/components/button/btnAjouterPanier";
+import AddToCartButton from "@/components/button/btnAjouterPanier";
 import { ListeNouv } from "@/homme DB/listeProduits/listeProd";
 // import { Produit } from "@/types/types";
 import Image from "next/image";

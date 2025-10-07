@@ -26,12 +26,12 @@ export default async function Promo(){
                             <header className="h-8">
                                 <div className="pl-3 h-8 bg-blue-400">
 
-                                    <p>Notre nouvelle gamme</p>
+                                    <p className="py-1.5">Notre nouvelle gamme</p>
 
                                 </div>
                             
                             </header>
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 gap-4 mt-0.5">
                        
                                   
                                 {produit.filter((_:Produit,index:number) => indexSouhaite.includes(index))
@@ -40,18 +40,20 @@ export default async function Promo(){
 
                                   
 
-                                        <article key={inxdex} className=" bg-white" >
+                                        <article key={inxdex} className=" bg-white border-2" >
 
                                             <Link href={`produit/${Article._id}`}>
 
                                                 <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
+                                                <div className="border-2 text-center">
                                                 <p>{Article.nom } </p>
                                                 <p>{Article.prix} </p>
+                                                </div>
 
                                             </Link>
 
                                         </article>
-                                        // {/* <AddToCartButton produit={Article}/> */}
+                                        // {/* <AddToCartButton produit={Article}/
                     
                                 ))}
                         

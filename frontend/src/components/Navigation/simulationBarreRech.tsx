@@ -8,7 +8,7 @@ import { PanierStore } from "../store global/panierStore";
 export default function SimulationRecherche(){
     const NombreAuPanier=PanierStore((state)=>state.etatPanier)
     return(
-        <div className="sticky bg-white h-24 py-2 w-full top-0 z-50">
+        <div className="sticky bg-white h-24 py-2 w-full top-0 z-50 block sm:hidden">
         <div className='flex mb-2'>
                 <div className=" ml-2 w-auto py-1">
                       <span><Menu/> </span>

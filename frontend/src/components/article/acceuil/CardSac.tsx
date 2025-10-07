@@ -6,6 +6,7 @@ import { Produit } from "@/types/types";
 import Link from "next/link";
 import Image from "next/image";
 import '@/styles/style.css'
+import AddToCartButton from "@/components/button/btnAjouterPanier";
 // import AddToCartButton from "../../button/btnAjouterPanier";
 
 
@@ -27,7 +28,7 @@ export default async function Sac(){
                             <header className="h-8">
                                 <div className="pl-3 h-8 bg-amber-200">
 
-                                    <p>Notre nouvelle gamme</p>
+                                    <p className="py-1.5">Notre nouvelle gamme</p>
 
                                 </div>
                             
@@ -39,20 +40,24 @@ export default async function Sac(){
                                     .map((Article:Produit, inxdex:string)=>(
                                     // {produit.slice(0, 6).map((Article:Produit, inxdex:string)=>(
 
-                                    <div key={inxdex} className=" bg-white pl-2 round "  >
+                                    <div key={inxdex} className=" bg-white pl-2 mt-0.5">
 
                                         <article className="flex w-40 " >
 
                                             <Link href={`produit/${Article._id}`}>
 
                                                 <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
+                                               <div className="border-2 text-center">
                                                 <p>{Article.nom } </p>
                                                 <p>{Article.prix} </p>
+                                                </div>
 
                                             </Link>
 
                                         </article>
-                                        {/* <AddToCartButton produit={Article}/> */}
+                                        <div className="border-2 px-4.5">
+                                        <AddToCartButton produit={Article}/>
+                                        </div>
                                     </div>
                                 ))}
                         
