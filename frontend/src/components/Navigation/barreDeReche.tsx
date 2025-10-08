@@ -24,9 +24,8 @@ export default function RechercheDeProduit(){
                 autoComplete="search"
                 value={query}
                 onChange={(e)=> setQuery(e.target.value)}
-                className="w-62 h-[5vh] text-center border-1 border-gray-300
-                rounded-2xl mr-2"
-                      
+                className="w-62 h-[5vh] text-center border-1 text-[16px] border-gray-300
+                rounded-2xl mr-2" 
             />
             <button type="submit" className="mx-1 absolute right-70 top-3" id='respPageRechercheBottom'>
                 <Search/>

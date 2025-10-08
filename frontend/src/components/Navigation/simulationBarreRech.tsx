@@ -4,11 +4,12 @@ import { Menu, ShoppingCart, UserRoundPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
+import RechercheDeProduit from "./barreDeReche";
 
 export default function SimulationRecherche(){
     const NombreAuPanier=PanierStore((state)=>state.etatPanier)
     return(
-        <div className="sticky bg-white h-24 py-2 w-full top-0 z-50 block sm:hidden">
+        <div className="sticky bg-white h-24 py-2 w-full top-0 z-50 block sm:hidden border-b-1 border-b-gray-200">
         <div className='flex mb-2'>
                 <div className=" ml-2 w-auto py-1">
                       <span><Menu/> </span>
@@ -61,12 +62,13 @@ export default function SimulationRecherche(){
            <form  className="mx-3" >
             <input type="search" name="" id="" placeholder="Recherche sur Olivi"
                 autoComplete="search"
-                className="w-full h-8 text-center border-1 border-gray-300
+                className="w-full h-8 text-center text-[16px] border-1 border-gray-300
                 rounded-2xl mr-2"
                       
             />
         </form>
         </Link>
+        {/* <RechercheDeProduit/> */}
         </div>
         
     )

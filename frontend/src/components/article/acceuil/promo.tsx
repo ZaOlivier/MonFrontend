@@ -21,12 +21,12 @@ export default async function Promo(){
         return(
             <>
                 <div >
-                    <div className="py-">
+                    <div className="pb-1">
                         <section className="bg-white">
                             <header className="h-8">
                                 <div className="pl-3 h-8 bg-blue-400">
 
-                                    <p className="py-1.5">Notre nouvelle gamme</p>
+                                    <p className="py-1.5">Offre de la semaine</p>
 
                                 </div>
                             
@@ -40,12 +40,12 @@ export default async function Promo(){
 
                                   
 
-                                        <article key={inxdex} className=" bg-white border-2" >
+                                        <article key={inxdex} className=" bg-white" >
 
                                             <Link href={`produit/${Article._id}`}>
 
                                                 <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
-                                                <div className="border-2 text-center">
+                                                <div className="text-center">
                                                 <p>{Article.nom } </p>
                                                 <p>{Article.prix} </p>
                                                 </div>

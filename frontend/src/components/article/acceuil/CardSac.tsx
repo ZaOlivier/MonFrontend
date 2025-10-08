@@ -23,12 +23,12 @@ export default async function Sac(){
         return(
             <>
                 <div >
-                    <div className="py-1">
-                        <section className="bg-white conten">
+                    <div className="py-2">
+                        <section className="bg-white h-68">
                             <header className="h-8">
                                 <div className="pl-3 h-8 bg-amber-200">
 
-                                    <p className="py-1.5">Notre nouvelle gamme</p>
+                                    <p className="py-1.5">Differents Sac pour tout vos besions</p>
 
                                 </div>
                             
@@ -47,7 +47,7 @@ export default async function Sac(){
                                             <Link href={`produit/${Article._id}`}>
 
                                                 <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
-                                               <div className="border-2 text-center">
+                                               <div className="text-center">
                                                 <p>{Article.nom } </p>
                                                 <p>{Article.prix} </p>
                                                 </div>
@@ -55,7 +55,7 @@ export default async function Sac(){
                                             </Link>
 
                                         </article>
-                                        <div className="border-2 px-4.5">
+                                        <div className="px-4.5 pt-1">
                                         <AddToCartButton produit={Article}/>
                                         </div>
                                     </div>
