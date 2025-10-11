@@ -24,7 +24,7 @@ export default function Home () {
       <div><h5 className="bg-white text-blue-600 text-center border-1 w-100%">Expose tes gammes de produit sur Olivi</h5></div>
       
       <Sac/>
-      {/* <Telephone/> */}
+      <Telephone/>
       <Promo/>
       <VetementFemme/>
       {/* <CardPromo/>

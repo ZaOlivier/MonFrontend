@@ -11,24 +11,25 @@ import AddToCartButton from "@/components/button/btnAjouterPanier";
 
 
 export default async function Telephone(){
-    const indexSouhaite = [0,1,3,4, 2,5];
-
+    const indexSouhaite = [3,0,1,2];
+// http://localhost:5000/produit/categorie/telephone
+// https://olivi.onrender.com/produit/categorie/telephone
    
     try{
         const res = await
-        axios.get("https://olivi.onrender.com/produit//categorie/telephone")
+        axios.get("http://localhost:5000/produit/categorie/telephone")
         const produit= res.data;
         
     
         return(
             <>
                 <div >
-                    <div className="py-2">
+                    <div className="pb-1">
                         <section className="bg-white h-68">
                             <header className="h-8">
-                                <div className="pl-3 h-8 bg-amber-200">
+                                <div className="pl-3 h-8 bg-blue-500">
 
-                                    <p className="py-1.5">Differents Sac pour tout vos besions</p>
+                                    <p className="py-1.5">Telephone à porter de main</p>
 
                                 </div>
                             
@@ -69,8 +70,11 @@ export default async function Telephone(){
             </>
         
         )}catch(err){
-        console.error((err))
+       console.error("Erreur lors de la récupération :", err.response?.data || err.message);
     }
 
 }
+
+ 
+
 

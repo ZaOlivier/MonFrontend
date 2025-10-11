@@ -27,6 +27,8 @@ export const AdmAjoutproduit=()=>{
             })
             setInterval(() => {
                 setMessage(res.data)
+                // console.log(res.data);
+                
             }, 200);
             
         //    console.log(res.data);

@@ -9,7 +9,7 @@ import '@/styles/style.css'
 
 
 export default async function Promo(){
-    const indexSouhaite = [8,0,1,7,9, 2];
+    const indexSouhaite = [8,0,1,7,9, 2,12];
 
    
     try{
@@ -24,7 +24,7 @@ export default async function Promo(){
                     <div className="pb-1">
                         <section className="bg-white">
                             <header className="h-8">
-                                <div className="pl-3 h-8 bg-blue-400">
+                                <div className="pl-3 h-8 bg-red-500">
 
                                     <p className="py-1.5">Offre de la semaine</p>
 
