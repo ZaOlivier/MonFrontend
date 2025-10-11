@@ -19,7 +19,7 @@ export default function ResumerPanier(){
                     <h1 className="bg-sky-300">Détails</h1>
                     <p>Montants Totals: {TotalPrixPanier} FCFA</p>
                     <div className="flex">
-                    <p className="mr-14">Nombres d'articles: {ResumeQte}</p> <Link href={'/commande'} className="text-sky-400">Commander</Link>
+                    <p className="mr-14">Nombres d&apos;articles: {ResumeQte}</p> <Link href={'/commande'} className="text-sky-400">Commander</Link>
                     </div>
                     <p>Livraison: 0 FCFA (Gratuit)</p>
                 </section>

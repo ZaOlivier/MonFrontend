@@ -4,13 +4,12 @@ export const dynamic = 'force-dynamic'; // utile si la data change souvent
 import Link from "next/link";
 import Image from "next/image";
 import '@/styles/style.css'
-import AddToCartButton from "@/components/button/btnAjouterPanier";
 import { ListeNouv } from "@/homme DB/listeProduits/listeProd";
 // import AddToCartButton from "../../button/btnAjouterPanier";
 
 
 export default async function Prot(){
-    const indexSouhaite = [0,1,3,4, 2,5];
+    
 
    
   

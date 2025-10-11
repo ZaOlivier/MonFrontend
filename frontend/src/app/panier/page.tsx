@@ -5,7 +5,7 @@ import SimulationRecherche from "@/components/Navigation/simulationBarreRech";
 import ResumerPanier from "@/components/resumerPanier/resumerPanier";
 import { PanierStore } from "@/components/store global/panierStore";
 import Image from "next/image";
-import Link from "next/link";
+
 
 
 

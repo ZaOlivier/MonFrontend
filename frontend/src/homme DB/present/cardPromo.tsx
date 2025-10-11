@@ -10,7 +10,7 @@ import { ListeNouv } from "@/homme DB/listeProduits/listeProd";
 
 
 export default async function CardPromo(){
-    const indexSouhaite = [0,1,3,4, 2,5];
+    
 
    
   
@@ -48,7 +48,7 @@ export default async function CardPromo(){
 
                                         </article>
                                         <div className="px-4.5 pt-1">
-                                        <AddToCartButton produit={Article}/>
+                                        {/* <AddToCartButton produit={Article}/> */}
                                         </div>
                                     </div>
                                 ))}

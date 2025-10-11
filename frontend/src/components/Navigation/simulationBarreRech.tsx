@@ -4,7 +4,6 @@ import { Menu, ShoppingCart, UserRoundPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
-import RechercheDeProduit from "./barreDeReche";
 
 export default function SimulationRecherche(){
     const NombreAuPanier=PanierStore((state)=>state.etatPanier)
