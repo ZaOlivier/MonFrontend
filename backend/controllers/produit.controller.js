@@ -15,6 +15,15 @@ router.get('/article', async(req, res)=>{
 
 })
 
+router.get('/categorie/:categorie', async (req, res) => {
+    try{
+  const Categories = await admini.find({ categorie: req.params.categorie });
+  res.json(Categories);
+    }catch(err){
+        res.send(Error)
+    }
+});
+
 router.post('/create', async(req, res)=>{
 
     try{

@@ -8,7 +8,12 @@ const ProduitsA= new mongoose.Schema({
   },
 
     prix:String,
-    image:String
+    image:String,
+
+    categorie:{
+      type: String, //les different Categories
+      required: true,
+    }
     
 })
 

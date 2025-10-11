@@ -50,10 +50,12 @@ app.use('/produit', Search)
 app.use('/commande', Commande)
 app.use('/produit', PageProduit)
 
+
 // pRoute administration
 app.use('/administration', EtatProduit)
 app.use('/administration', CommandePasse)
 app.use('/administration', EtatUser)
+
 
 
 module.exports=app;

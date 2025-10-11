@@ -8,16 +8,21 @@ export const AdmAjoutproduit=()=>{
     const[prix, setPrix]=useState('');
     const[image, setImage]=useState('');
     const[message, setMessage]=useState('');
+    const[categorie, setCategorie]=useState("")
+    
+    
     //  const[image, setDEs]=useState('');
    
     const RoleAjoutprod=(async(e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
+        console.log(categorie);
         try{
             const res= await
             axios.post('https://olivi.onrender.com/administration/produit_create',{
                 nom,
                 prix,
-                image
+                image,
+                categorie
                 // image,
             })
             setInterval(() => {
@@ -48,6 +53,13 @@ export const AdmAjoutproduit=()=>{
         }}>{message} </h3>
     
         <form onSubmit={RoleAjoutprod} >
+             <input type="text" 
+                value={categorie}
+                placeholder="Categorie?"
+                onChange={(e) =>
+                setCategorie(e.target.value)}
+                required
+            />
             <input type="text" 
                 value={nom}
                 placeholder="nom du produit"
