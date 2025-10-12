@@ -1,35 +1,38 @@
 "use client"
 
-import { Menu, ShoppingCart, UserRoundPen } from "lucide-react";
+import { Menu, Search, ShoppingCart, UserRoundPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PanierStore } from "../store global/panierStore";
+import { Navigation } from "./Navigation";
 
 export default function SimulationRecherche(){
-    const NombreAuPanier=PanierStore((state)=>state.etatPanier)
+  const NombreAuPanier=PanierStore((state)=>state.etatPanier)
     return(
-        <div className="sticky bg-white h-24 py-2 w-full top-0 z-50 block sm:hidden border-b-1 border-b-gray-200">
+      <>
+      <div className="sticky bg-white h-24 py-2 w-full top-0 z-50 block sm:hidden border-b-1 border-b-gray-200">
+
         <div className='flex mb-2'>
-                <div className=" ml-2 w-auto py-1">
-                      <span><Menu/> </span>
-                    </div>
-               <div className="w-auto ml-2  py-1 sm:mr-70" >
-                      <Link href="/" >
-                        <Image src="/next.svg" alt="olvi vente en ligne" width={100} height={300} priority/>
-                      </Link>
-                    </div>
-                <div className="w-auto sm:w-1/2 ml-6 mr-2" id="respCompte">
-                    {/* <Link href="/commande">
-                      
-                    </Link> */}
-                    <Link href="/#">
-                      <UserRoundPen className="mx-3.5"/>
-                      {/* <p>Compte</p> */}
-                    </Link>
-                  </div>
+          <div className=" ml-2 w-auto py-1">
+            <span><Menu/> </span>
+          </div>
+
+            <div className="w-auto ml-2  py-1 sm:mr-70" >
+              <Link href="/" >
+                <Image src="/next.svg" alt="olvi vente en ligne" width={100} height={300} priority/>
+              </Link>
+            </div>
+
+            <div className="w-auto sm:w-1/2 ml-6 mr-2" id="respCompte">
+              <Link href="/#">
+
+                <UserRoundPen className="mx-3.5"/>
+                    
+              </Link>
+            </div>
             
             
-            {!NombreAuPanier || NombreAuPanier.length === 0 ?( <div><Link href="/#">
+          {!NombreAuPanier || NombreAuPanier.length === 0 ?( <div><Link href="/#">
             {/* <UserCircle/> */}
             <p className="text-amber-300 border-l-2">Besion <br />d&apos;aide?</p>
             </Link></div>
@@ -58,17 +61,16 @@ export default function SimulationRecherche(){
                
         </div>
         <Link href={"/recherche"}>
-           <form  className="mx-3" >
-            <input type="search" name="" id="" placeholder="Recherche sur Olivi"
-                autoComplete="search"
-                className="w-full h-8 text-center text-[16px] border-1 border-gray-300
-                rounded-2xl mr-2"
-                      
-            />
-        </form>
+           
+          <div className="border-1 h-7 w-80 rounded mx-4 border-gray-400 flex" id="respRechecherSimul">
+            <Search className="text-gray-400 ml-2"/>
+              <p className="text-gray-400 pl-2 py-1">recherche d'autres articles </p>
+          </div>
+        
         </Link>
-        {/* <RechercheDeProduit/> */}
         </div>
+        <Navigation/>
+        </>
         
     )
 }

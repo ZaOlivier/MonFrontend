@@ -17,7 +17,7 @@ export default async function Telephone(){
    
     try{
         const res = await
-        axios.get("http://localhost:5000/produit/categorie/telephone")
+        axios.get("https://olivi.onrender.com/produit/categorie/telephone")
         const produit= res.data;
         
     
@@ -70,7 +70,7 @@ export default async function Telephone(){
             </>
         
         )}catch(err){
-       console.error("Erreur lors de la récupération :", err.response?.data || err.message);
+       console.error((err))
     }
 
 }

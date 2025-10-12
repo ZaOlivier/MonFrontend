@@ -6,6 +6,8 @@ import Sac from "@/components/article/acceuil/CardSac";
 import Telephone from "@/components/article/acceuil/CardTelephone";
 import Promo from "@/components/article/acceuil/promo";
 import SimulationRecherche from "@/components/Navigation/simulationBarreRech";
+// import CardPromo from "@/homme DB/present/cardPromo";
+// import Prot from "@/homme DB/present/pro";
 // import Prot from "@/homme DB/present/pro";
 
 

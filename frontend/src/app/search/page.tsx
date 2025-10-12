@@ -47,9 +47,9 @@ export default  function PageDeRecherche(){
     ):(
 
         <Suspense>
-    <div className="grid grid-cols-2  md:grid-cols-3 gap-1">
-      {produit.map((p) => (
-        <div key={p._id} className=" border p-2 m-1 rounded bg-white">
+        <div className="grid grid-cols-2  md:grid-cols-3 gap-1">
+          {produit.map((p) => (
+          <div key={p._id} className=" border p-2 m-1 rounded bg-white">
           <div className="ralive border-r-2 h-1/10 w-1/3 rounded-r-4xl bottom-20 ml-24 bg-amber-300 py-1 px-0.5">
           <p className="text-sm">promo</p>
           </div>

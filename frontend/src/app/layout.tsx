@@ -100,7 +100,7 @@ export default function LayoutPanier({
         {/* <HeaderGene/> */}
          {/* <RechercheDeProduit/> */}
         
-        <main className="bg-gray-300">{children}</main>
+        <main className="bg-gray-300 ">{children}</main>
         <Analytics/>
       </body>
       

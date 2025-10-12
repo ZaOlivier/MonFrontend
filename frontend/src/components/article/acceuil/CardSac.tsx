@@ -44,7 +44,7 @@ export default async function Sac(){
 
                                         <article className="flex w-40 " >
 
-                                            <Link href={`produit/${Article._id}`}>
+                                            <Link href={`pageProduit/${Article._id}`}>
 
                                                 <Image  src={Article.image}  alt="Sac à dos pour homme chez Foluo" height={300} width={300}/>
                                                <div className="text-center">

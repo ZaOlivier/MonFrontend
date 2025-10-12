@@ -17,21 +17,21 @@ export default function RechercheDeProduit(){
     }
 
     return(
-        <div className='fixed bg-white h-14 py-2 w-full' id='respPageRecherche'>
-        <form onSubmit={handleClick}  className="mx-1"  >
+        <div className='fixed bg-white h-14 py-2 w-full items-center' id='respPageRecherche'>
+        <form onSubmit={handleClick}  className="mx-1  flex items-center"  >
             <input type="search" name="" placeholder="Recherche sur Olivi" 
                 id='respPageRechercheInput'
                 autoComplete="search"
                 value={query}
                 onChange={(e)=> setQuery(e.target.value)}
-                className="w-62 h-[5vh] text-center border-1 text-[16px] border-gray-300
-                rounded-2xl mr-2" 
+                className="w-62 h-[5vh] text-center text-[16px] border-1 border-red-500
+                rounded mr-2" 
             />
             <button type="submit" className="mx-1 absolute right-70 top-3" id='respPageRechercheBottom'>
-                <Search/>
+                <Search />
             </button>
             <Link href="/">
-            <span className='text-amber-300'>Annule</span>
+            <span className='text-red-500'>Annule</span>
             </Link>
         </form>
         </div>

@@ -28,14 +28,18 @@ const MonPanier=()=>{
         {panier.map((produit, _id)=>
         
             <div key={_id} className="h-1OO m-3 border-b-1 border-b-neutral-300 overflow-y-auto scrollbar-hidden">
-                <div className="w-20  mb-2">
+                <div className="w-100%  mb-2 grid grid-cols-3">
+                    <section className="w-20">
                     <Image src={produit.image} alt={produit.nom} width={300} height={300}/>
-                    
+                     <button onClick={()=>Supprimer(produit._id)} className="text-red-500">supprimer</button>
+                     </section>
+                     <div>
                      <p>{produit.nom} </p> 
                      <p>{produit.prix} </p>
+                     </div>
+                     <div>
                      <QDeProduitDansLePanier _id={produit._id}/>
-                     <button onClick={()=>Supprimer(produit._id)} className="text-red-500">supprimer</button>
-                     {/* <Link href={'/commande'} className="text-amber-500">Commander</Link> */}
+                     </div>
                 </div>
              </div>
         
@@ -47,15 +51,3 @@ const MonPanier=()=>{
     
 
 export default MonPanier;
-
-{/* // {panier.map((produit)=> */}
-{/* //             <div key={produit._id} className="h-1OO m-3">
-//                 <div className="w-20  ">
-//                     <Image src={produit.image} alt={produit.nom} width={300} height={300}/>
-                    
-//                     <p>{produit.nom} </p> 
-//                     <p>{produit.prix} </p>
-//                     <button onClick={()=>Supprimer(produit._id)}>supprimer</button>
-//                 </div>
-//             </div>
-//         )} */}
